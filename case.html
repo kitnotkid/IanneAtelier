@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
   <title>Case – ianne atelier</title>
 
   <style>
@@ -36,16 +40,17 @@
     }
 
     .header-inner {
+      font-family: 'Cormarant',serif;
       max-width: 1100px;
       margin: 0 auto;
-      padding: 18px 20px;
+      padding: 25px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .brand {
-      font-size: 14px;
+      font-size: 30px;
       letter-spacing: 1.5px;
     }
 
@@ -78,6 +83,7 @@
     }
 
     .case-header h1 {
+  
       font-size: 26px;
       font-weight: 500;
       margin: 0 0 10px;
@@ -164,45 +170,39 @@
 
 </div>
 
+<script src="assets/js/cases.js"></script>
+
 <script>
-  const caseData = {
-    title: {
-      en: "LV Bag Cleaning",
-      zh: "LV 包包清洗护理"
-    },
-    meta: {
-      en: "Handle discoloration · Cleaning service",
-      zh: "手柄变色 · 包包清洗服务"
-    },
-    desc: {
-      en: "Gentle cleaning was carried out to remove discoloration while preserving the original leather texture.",
-      zh: "采用温和清洗方式，去除变色问题，同时保留皮革原有质感与结构。"
-    },
-    cta: {
-      en: "REQUEST ASSESSMENT",
-      zh: "获取免费评估"
-    },
-    image: "assets/images/assets/images/cases/cleaning/lv/img-lv-cleaning-001.webp"
-  };
+  const params = new URLSearchParams(window.location.search);
+  const caseId = params.get("id");
+
+  if (!caseId || !CASES[caseId]) {
+    console.error("Case not found:", caseId);
+  }
+
+  const caseData = CASES[caseId];
 
   function setLang(lang) {
     document.getElementById("title").textContent = caseData.title[lang];
-    document.getElementById("meta").textContent = caseData.meta[lang];
+    document.getElementById("meta").textContent = `${caseData.brand} · ${caseData.service}`;
     document.getElementById("desc").textContent = caseData.desc[lang];
-    document.getElementById("cta-text").textContent = caseData.cta[lang];
+    document.getElementById("cta-text").textContent = lang === "en"
+      ? "REQUEST ASSESSMENT"
+      : "获取免费评估";
 
     document.getElementById("btn-en").classList.toggle("active", lang === "en");
     document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
   }
 
+  // image
   document.getElementById("case-image").src = caseData.image;
 
   document.getElementById("btn-en").onclick = () => setLang("en");
   document.getElementById("btn-zh").onclick = () => setLang("zh");
 
+  // default language
   setLang("en");
 </script>
 
 </body>
 </html>
-
