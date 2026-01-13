@@ -166,13 +166,24 @@
   </div>
 
   <!-- BRAND STORY (PLACEHOLDER) -->
-  <div class="section">
-    <h2 id="story-title">Our Philosophy</h2>
-    <p id="story-text">
-      This space will introduce the atelier, craftsmanship, and approach to restoration.
-      A long-form brand story will live here in the future.
-    </p>
-  </div>
+  <!-- NARRATIVE 1 : IDENTITY -->
+    <div class="section" id="narrative-identity">
+      <h2 id="n1-title"></h2>
+      <p id="n1-text"></p>
+    </div>
+  
+    <!-- NARRATIVE 2 : CRAFT / PROCESS -->
+    <div class="section" id="narrative-craft">
+      <h2 id="n2-title"></h2>
+      <p id="n2-text"></p>
+    </div>
+  
+    <!-- NARRATIVE 3 : RESULT / PROMISE -->
+    <div class="section" id="narrative-result">
+      <h2 id="n3-title"></h2>
+      <p id="n3-text"></p>
+    </div>
+
 
     <!-- CUSTOMER FEEDBACK (PLACEHOLDER) -->
   <div class="section" id="feedback-section">
@@ -205,13 +216,13 @@
         ? "Specialist care for leather goods, handbags, and treasured pieces"
         : "专注于皮具、手袋及珍贵物件的专业修复";
 
-    document.getElementById("story-title").textContent =
-      lang === "en" ? "Our Philosophy" : "我们的理念";
+    // document.getElementById("story-title").textContent =
+    //   lang === "en" ? "Our Philosophy" : "我们的理念";
 
-    document.getElementById("story-text").textContent =
-      lang === "en"
-        ? "This space will introduce the atelier, craftsmanship, and approach to restoration."
-        : "这里将用于介绍工坊理念、工艺精神以及修复方式。";
+    // document.getElementById("story-text").textContent =
+    //   lang === "en"
+    //     ? "This space will introduce the atelier, craftsmanship, and approach to restoration."
+    //     : "这里将用于介绍工坊理念、工艺精神以及修复方式。";
 
     document.getElementById("feedback-title").textContent =
       lang === "en" ? "Client Feedback" : "客户反馈";
@@ -223,6 +234,34 @@
       
     document.getElementById("cta-text").textContent =
       lang === "en" ? "View Case Gallery" : "查看修复案例";
+      
+      // Narrative 1
+    document.getElementById("n1-title").textContent =
+      lang === "en" ? "An Atelier, Not a Service" : "一家工坊，而非普通服务";
+    
+    document.getElementById("n1-text").textContent =
+      lang === "en"
+        ? "IANNE ATELIER is a restoration atelier dedicated to the careful preservation of leather goods and treasured pieces."
+        : "IANNE ATELIER 是一家专注于皮具与珍贵物件修复的工坊，我们重视保留原有价值。";
+    
+    // Narrative 2
+    document.getElementById("n2-title").textContent =
+      lang === "en" ? "Craft Before Speed" : "工艺优先于速度";
+    
+    document.getElementById("n2-text").textContent =
+      lang === "en"
+        ? "Every piece is assessed individually, guided by experience and restraint."
+        : "每一件作品都会被独立评估，以经验与克制为原则，而非追求速度。";
+    
+    // Narrative 3
+    document.getElementById("n3-title").textContent =
+      lang === "en" ? "Restored to Be Continued" : "修复，是为了继续使用";
+    
+    document.getElementById("n3-text").textContent =
+      lang === "en"
+        ? "Our goal is to extend the life and meaning of each piece."
+        : "我们的目标是延续每一件作品的使用寿命与情感价值。";
+
     }
 
   document.getElementById("btn-en").onclick = () => setLang("en");
