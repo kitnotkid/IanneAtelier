@@ -74,7 +74,7 @@ const CASES = {
     }
   },
 
-    /* ---------- Case 0005 (Others / Prada) ---------- */
+    /* ---------- Case 0005 (Coach) ---------- */
   "0005": {
     brand: "Coach",
     service: "Colour",
@@ -98,6 +98,7 @@ const CASES = {
   }
 };
 };
+
 
 
 
