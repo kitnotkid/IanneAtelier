@@ -3,7 +3,6 @@
    ================================================== */
 
 const CASES = {
-
   /* ---------- Case 0001 ---------- */
   "0001": {
     brand: "LV",
@@ -42,7 +41,7 @@ const CASES = {
   "0003": {
     brand: "Prada",
     service: "Cleaning",
-    image: "assets/images/cases/cleaning/others/0003_01.webp",
+    images: ["assets/images/cases/cleaning/others/0003_01.webp"],
 
     title: {
       en: "Prada Bag Cleaning",
@@ -59,10 +58,10 @@ const CASES = {
   "0004": {
     brand: "Prada",
     service: "Cleaning",
-    image: "assets/images/cases/cleaning/others/0004_00.webp",
+    images: ["assets/images/cases/cleaning/others/0004_00.webp",
      "assets/images/cases/cleaning/others/0004_01.webp",
      "assets/images/cases/cleaning/others/0004_02.webp",
-     "assets/images/cases/cleaning/others/0004_03.webp",
+     "assets/images/cases/cleaning/others/0004_03.webp"],
 
     title: {
       en: "Prada Bag Cleaning",
@@ -75,7 +74,7 @@ const CASES = {
     }
   },
 
-    /* ---------- Case 0004 (Others / Prada) ---------- */
+    /* ---------- Case 0005 (Others / Prada) ---------- */
   "0005": {
     brand: "",
     service: "",
@@ -92,6 +91,7 @@ const CASES = {
     }
   }
 };
+
 
 
 
