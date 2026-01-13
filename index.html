@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <title>ianne atelier</title>
+
+  <!-- ===== DEFAULT STYLE (DO NOT MODIFY) ===== -->
+  <style>
+    :root {
+      --bg-main: #f6f4f1;
+      --bg-header: #3a2e26;
+      --bg-card: #ffffff;
+      --text-main: #2b2b2b;
+      --text-muted: #8a8a8a;
+      --accent: #b7a58c;
+      --border-soft: #e5e2dd;
+      --text-light: #f2efe9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ---------- Header ---------- */
+    header {
+      background: var(--bg-header);
+      color: var(--text-light);
+    }
+
+    .header-inner {
+      font-family: 'Cormorant', serif;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 30px;
+      letter-spacing: 1.5px;
+    }
+
+    .lang-switch button {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.4);
+      color: var(--text-light);
+      font-size: 12px;
+      padding: 4px 10px;
+      margin-left: 6px;
+      cursor: pointer;
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ---------- Layout ---------- */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 20px 100px;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .page-title h1 {
+      font-family: 'Cormorant', serif;
+      font-size: 34px;
+      font-weight: 500;
+      margin: 0 0 14px;
+    }
+
+    .page-title p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* ---------- Sections ---------- */
+    .section {
+      max-width: 720px;
+      margin: 0 auto 64px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-family: 'Cormorant', serif;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .section p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .cta a {
+      display: inline-block;
+      border: 1px solid var(--text-main);
+      padding: 12px 28px;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .cta a:hover {
+      background: var(--text-main);
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="header-inner">
+    <div class="brand">IANNE ATELIER</div>
+    <div class="lang-switch">
+      <button id="btn-en" class="active">EN</button>
+      <button id="btn-zh">中文</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<div class="container">
+
+  <!-- HERO / BRAND POSITION -->
+  <div class="page-title">
+    <h1 id="hero-title">Luxury Restoration Atelier</h1>
+    <p id="hero-sub">
+      Specialist care for leather goods, handbags, and treasured pieces
+    </p>
+  </div>
+
+  <!-- BRAND STORY (PLACEHOLDER) -->
+  <div class="section">
+    <h2 id="story-title">Our Philosophy</h2>
+    <p id="story-text">
+      This space will introduce the atelier, craftsmanship, and approach to restoration.
+      A long-form brand story will live here in the future.
+    </p>
+  </div>
+
+  <!-- CUSTOMER FEEDBACK (PLACEHOLDER) -->
+  <div class="section">
+    <h2 id="feedback-title">Client Feedback</h2>
+    <p id="feedback-text">
+      Selected testimonials and trust signals will be presented here.
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <a href="cases.html" id="cta-text">View Case Gallery</a>
+  </div>
+
+</div>
+
+<!-- ===== LANGUAGE SWITCH (UI LEVEL ONLY) ===== -->
+<script>
+  function setLang(lang) {
+    document.getElementById("btn-en").classList.toggle("active", lang === "en");
+    document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
+
+    document.getElementById("hero-title").textContent =
+      lang === "en" ? "Luxury Restoration Atelier" : "高端修复工坊";
+
+    document.getElementById("hero-sub").textContent =
+      lang === "en"
+        ? "Specialist care for leather goods, handbags, and treasured pieces"
+        : "专注于皮具、手袋及珍贵物件的专业修复";
+
+    document.getElementById("story-title").textContent =
+      lang === "en" ? "Our Philosophy" : "我们的理念";
+
+    document.getElementById("story-text").textContent =
+      lang === "en"
+        ? "This space will introduce the atelier, craftsmanship, and approach to restoration."
+        : "这里将用于介绍工坊理念、工艺精神以及修复方式。";
+
+    document.getElementById("feedback-title").textContent =
+      lang === "en" ? "Client Feedback" : "客户反馈";
+
+    document.getElementById("feedback-text").textContent =
+      lang === "en"
+        ? "Selected testimonials and trust signals will be presented here."
+        : "这里将展示精选客户评价与信任背书。";
+
+    document.getElementById("cta-text").textContent =
+      lang === "en" ? "View Case Gallery" : "查看修复案例";
+  }
+
+  document.getElementById("btn-en").onclick = () => setLang("en");
+  document.getElementById("btn-zh").onclick = () => setLang("zh");
+  setLang("en");
+</script>
+
+</body>
+</html>
