@@ -204,68 +204,62 @@
 
 <!-- ===== LANGUAGE SWITCH (UI LEVEL ONLY) ===== -->
 <script>
-  function setLang(lang) {
-    document.getElementById("btn-en").classList.toggle("active", lang === "en");
-    document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
+  const TEXT = {
+    en: {
+      "hero-title": "Luxury Restoration Atelier",
+      "hero-sub": "Specialist care for leather goods, handbags, and treasured pieces",
 
-    document.getElementById("hero-title").textContent =
-      lang === "en" ? "Luxury Restoration Atelier" : "高端修复工坊";
+      "n1-title": "An Atelier, Not a Service",
+      "n1-text": "IANNE ATELIER is a restoration atelier dedicated to the careful preservation of leather goods and treasured pieces.",
 
-    document.getElementById("hero-sub").textContent =
-      lang === "en"
-        ? "Specialist care for leather goods, handbags, and treasured pieces"
-        : "专注于皮具、手袋及珍贵物件的专业修复";
+      "n2-title": "Craft Before Speed",
+      "n2-text": "Every piece is assessed individually, guided by experience and restraint.",
 
-    // document.getElementById("story-title").textContent =
-    //   lang === "en" ? "Our Philosophy" : "我们的理念";
+      "n3-title": "Restored to Be Continued",
+      "n3-text": "Our goal is to extend the life and meaning of each piece.",
 
-    // document.getElementById("story-text").textContent =
-    //   lang === "en"
-    //     ? "This space will introduce the atelier, craftsmanship, and approach to restoration."
-    //     : "这里将用于介绍工坊理念、工艺精神以及修复方式。";
+      "feedback-title": "Client Feedback",
+      "feedback-text": "Words shared by clients who entrusted their cherished pieces to our atelier.",
 
-    document.getElementById("feedback-title").textContent =
-      lang === "en" ? "Client Feedback" : "客户反馈";
+      "cta-text": "View Case Gallery"
+    },
 
-    document.getElementById("feedback-text").textContent =
-      lang === "en"
-      ? "Words shared by clients who entrusted their cherished pieces to our atelier."
-      : "这里将展示客户对工坊的真实反馈与信任评价。";
-      
-    document.getElementById("cta-text").textContent =
-      lang === "en" ? "View Case Gallery" : "查看修复案例";
-      
-      // Narrative 1
-    document.getElementById("n1-title").textContent =
-      lang === "en" ? "An Atelier, Not a Service" : "一家工坊，而非普通服务";
-    
-    document.getElementById("n1-text").textContent =
-      lang === "en"
-        ? "IANNE ATELIER is a restoration atelier dedicated to the careful preservation of leather goods and treasured pieces."
-        : "IANNE ATELIER 是一家专注于皮具与珍贵物件修复的工坊，我们重视保留原有价值。";
-    
-    // Narrative 2
-    document.getElementById("n2-title").textContent =
-      lang === "en" ? "Craft Before Speed" : "工艺优先于速度";
-    
-    document.getElementById("n2-text").textContent =
-      lang === "en"
-        ? "Every piece is assessed individually, guided by experience and restraint."
-        : "每一件作品都会被独立评估，以经验与克制为原则，而非追求速度。";
-    
-    // Narrative 3
-    document.getElementById("n3-title").textContent =
-      lang === "en" ? "Restored to Be Continued" : "修复，是为了继续使用";
-    
-    document.getElementById("n3-text").textContent =
-      lang === "en"
-        ? "Our goal is to extend the life and meaning of each piece."
-        : "我们的目标是延续每一件作品的使用寿命与情感价值。";
+    zh: {
+      "hero-title": "高端修复工坊",
+      "hero-sub": "专注于皮具、手袋及珍贵物件的专业修复",
 
+      "n1-title": "一家工坊，而非普通服务",
+      "n1-text": "IANNE ATELIER 是一家专注于皮具与珍贵物件修复的工坊，我们重视保留原有价值。",
+
+      "n2-title": "工艺优先于速度",
+      "n2-text": "每一件作品都会被独立评估，以经验与克制为原则。",
+
+      "n3-title": "修复，是为了继续使用",
+      "n3-text": "我们的目标是延续每一件作品的使用寿命与情感价值。",
+
+      "feedback-title": "客户反馈",
+      "feedback-text": "这里将展示客户对工坊的真实反馈与信任评价。",
+
+      "cta-text": "查看修复案例"
     }
+  };
 
-  document.getElementById("btn-en").onclick = () => setLang("en");
-  document.getElementById("btn-zh").onclick = () => setLang("zh");
+  function setLang(lang) {
+    // toggle button state
+    document.getElementById("btn-en")?.classList.toggle("active", lang === "en");
+    document.getElementById("btn-zh")?.classList.toggle("active", lang === "zh");
+
+    // inject text safely
+    const dict = TEXT[lang];
+    Object.keys(dict).forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = dict[id];
+    });
+  }
+
+  document.getElementById("btn-en")?.addEventListener("click", () => setLang("en"));
+  document.getElementById("btn-zh")?.addEventListener("click", () => setLang("zh"));
+
   setLang("en");
 </script>
 
