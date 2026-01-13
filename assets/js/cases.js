@@ -53,7 +53,7 @@ const CASES = {
       en: "Professional cleaning carried out on a Prada bag with visible signs of wear.",
       zh: "针对有明显使用痕迹的 Prada 包进行专业清洗护理。"
     }
-  }
+  }，
 
    /* ---------- Case 0004 (Others / Prada) ---------- */
   "0004": {
@@ -70,6 +70,7 @@ const CASES = {
       en: "Professional cleaning carried out on a Prada bag with visible signs of wear.",
       zh: "针对有明显使用痕迹的 Prada 包进行专业清洗护理。"
     }
+  }，
 
     /* ---------- Case 0004 (Others / Prada) ---------- */
   "0005": {
@@ -86,5 +87,7 @@ const CASES = {
       en: "Professional cleaning carried out on a Prada bag with visible signs of wear.",
       zh: "针对有明显使用痕迹的 Prada 包进行专业清洗护理。"
     }
+  }
 };
+
 
