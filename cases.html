@@ -156,7 +156,6 @@
   </div>
 
   <div class="case-grid" id="case-grid">
-    <!-- JS injects cases here -->
   </div>
 
 </div>
@@ -178,8 +177,12 @@
         window.location.href = `case.html?id=${id}`;
       };
 
+      const coverImage = Array.isArray(data.images)
+        ? data.images[0]
+        : data.image;
+      
       card.innerHTML = `
-        <img src="${data.image}" alt="${data.title.en}" loading="lazy">
+        <img src="${coverImage}" alt="${data.title.en}" loading="lazy">
         <div class="case-info">
           <div class="brand">${data.brand}</div>
           <div class="service">${data.service}</div>
@@ -208,4 +211,5 @@
 
 </body>
 </html>
+
 
