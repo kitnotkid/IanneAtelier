@@ -76,18 +76,24 @@ const CASES = {
 
     /* ---------- Case 0005 (Others / Prada) ---------- */
   "0005": {
-    brand: "",
-    service: "",
-    image: "",
+    brand: "Coach",
+    service: "Colour",
+    images: [
+      "assets/images/cases/Colour/Coach/0005_00.webp",
+      "assets/images/cases/Colour/Coach/0005_01.webp",
+      "assets/images/cases/Colour/Coach/0005_02.webp",
+      "assets/images/cases/Colour/Coach/0005_03.webp",
+
+    ],
 
     title: {
-      en: "Prada Bag Cleaning",
-      zh: "Prada 包包清洗护理"
+      en: "Coach Bag Colour Restore",
+      zh: "Coach 包包补色"
     },
 
     desc: {
-      en: "Professional cleaning carried out on a Prada bag with visible signs of wear.",
-      zh: "针对有明显使用痕迹的 Prada 包进行专业清洗护理。"
+      en: "Original colour had faded unevenly due to wear and exposure.The surface was carefully cleaned and colour-corrected to restore depth and consistency while preserving the original leather texture.",
+      zh: "因日常使用与环境影响，包身颜色出现不均匀褪色。经过细致清洁与补色处理，在保留原有皮质纹理的前提下，恢复整体色泽与层次。"
     }
   }
 };
