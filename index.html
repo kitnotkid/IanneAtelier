@@ -174,13 +174,15 @@
     </p>
   </div>
 
-  <!-- CUSTOMER FEEDBACK (PLACEHOLDER) -->
-  <div class="section">
+    <!-- CUSTOMER FEEDBACK (PLACEHOLDER) -->
+  <div class="section" id="feedback-section">
     <h2 id="feedback-title">Client Feedback</h2>
     <p id="feedback-text">
-      Selected testimonials and trust signals will be presented here.
+      Words shared by clients who entrusted their cherished pieces to our atelier.
+      This section will present selected voices and trust signals in the future.
     </p>
   </div>
+
 
   <!-- CTA -->
   <div class="cta">
@@ -216,12 +218,12 @@
 
     document.getElementById("feedback-text").textContent =
       lang === "en"
-        ? "Selected testimonials and trust signals will be presented here."
-        : "这里将展示精选客户评价与信任背书。";
-
+      ? "Words shared by clients who entrusted their cherished pieces to our atelier."
+      : "这里将展示客户对工坊的真实反馈与信任评价。";
+      
     document.getElementById("cta-text").textContent =
       lang === "en" ? "View Case Gallery" : "查看修复案例";
-  }
+    }
 
   document.getElementById("btn-en").onclick = () => setLang("en");
   document.getElementById("btn-zh").onclick = () => setLang("zh");
