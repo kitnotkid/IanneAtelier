@@ -40,7 +40,7 @@
     }
 
     .header-inner {
-      font-family: 'Cormarant',serif;
+      font-family: 'Cormorant',serif;
       max-width: 1100px;
       margin: 0 auto;
       padding: 25px 20px;
@@ -102,11 +102,14 @@
       padding: 18px;
     }
 
-    .image-card img {
+    .image-card img{
       width: 100%;
       display: block;
     }
 
+    .image-card img + img {
+      margin-top: 16px;
+    }
     /* ---------- Description ---------- */
     .case-desc {
       max-width: 640px;
@@ -158,8 +161,8 @@
     <p id="meta"></p>
   </div>
 
-  <div class="image-card">
-    <img id="case-image" src="" alt="Bag restoration comparison" loading="lazy">
+  <div class="image-card" id="image-gallery">
+    <!-- <img id="case-image" src="" alt="Bag restoration comparison" loading="lazy"> -->
   </div>
 
   <div class="case-desc" id="desc"></div>
@@ -178,6 +181,8 @@
 
   if (!caseId || !CASES[caseId]) {
     console.error("Case not found:", caseId);
+    document.querySelector(".container").innerHTML = "<p>Case not found.</p>";
+    throw new Error("Invalid case ID");
   }
 
   const caseData = CASES[caseId];
@@ -195,7 +200,27 @@
   }
 
   // image
-  document.getElementById("case-image").src = caseData.image;
+  // document.getElementById("case-image").src = caseData.image;
+
+  const gallery = document.getElementById("image-gallery");
+
+  if (Array.isArray(caseData.images)) {
+    caseData.images.forEach(src => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.loading = "lazy";
+      img.alt = `${caseData.title.en} – view`;
+      gallery.appendChild(img);
+    });
+  } else if (caseData.image) {
+    // 向后兼容旧 case
+    const img = document.createElement("img");
+    img.src = caseData.image;
+    img.loading = "lazy";
+    img.alt = caseData.title.en;
+    gallery.appendChild(img);
+  }
+    
 
   document.getElementById("btn-en").onclick = () => setLang("en");
   document.getElementById("btn-zh").onclick = () => setLang("zh");
@@ -206,3 +231,4 @@
 
 </body>
 </html>
+
