@@ -60,6 +60,9 @@ const CASES = {
     brand: "Prada",
     service: "Cleaning",
     image: "assets/images/cases/cleaning/others/0004_00.webp",
+     "assets/images/cases/cleaning/others/0004_01.webp",
+     "assets/images/cases/cleaning/others/0004_02.webp",
+     "assets/images/cases/cleaning/others/0004_03.webp",
 
     title: {
       en: "Prada Bag Cleaning",
@@ -89,6 +92,7 @@ const CASES = {
     }
   }
 };
+
 
 
 
