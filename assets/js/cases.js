@@ -111,7 +111,35 @@ const CASES = {
       zh: "因日常使用与环境影响，包身颜色出现不均匀褪色。经过细致清洁与补色处理，在保留原有皮质纹理的前提下，恢复整体色泽与层次。"
     }
   }
+
+   /* ---------- Case 0006 (Others / Braun Buffel) ---------- */
+  "0006": {
+    brand: "Braun Buffel",
+    service: {
+      en: "Colour",
+      zh: "补色"
+    },
+    images: [
+      "assets/images/cases/Colour/Coach/0006_00.webp",
+      "assets/images/cases/Colour/Coach/0006_01.webp",
+      "assets/images/cases/Colour/Coach/0006_02.webp",
+      "assets/images/cases/Colour/Coach/0006_03.webp",
+      "assets/images/cases/Colour/Coach/0006_04.webp",
+
+    ],
+
+    title: {
+      en: "Braun Buffel Bag Colour Restore",
+      zh: "Braun Buffel 包包补色"
+    },
+
+    desc: {
+      en: "Original colour had faded unevenly due to wear and exposure.The surface was carefully cleaned and colour-corrected to restore depth and consistency while preserving the original leather texture.",
+      zh: "因日常使用与环境影响，包身颜色出现不均匀褪色。经过细致清洁与补色处理，在保留原有皮质纹理的前提下，恢复整体色泽与层次。"
+    }
+  }
 };
+
 
 
 
