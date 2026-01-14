@@ -120,11 +120,11 @@ const CASES = {
       zh: "补色"
     },
     images: [
-      "assets/images/cases/Colour/Coach/0006_00.webp",
-      "assets/images/cases/Colour/Coach/0006_01.webp",
-      "assets/images/cases/Colour/Coach/0006_02.webp",
-      "assets/images/cases/Colour/Coach/0006_03.webp",
-      "assets/images/cases/Colour/Coach/0006_04.webp",
+      "assets/images/cases/Colour/Others/0006_00.webp",
+      "assets/images/cases/Colour/Others/0006_01.webp",
+      "assets/images/cases/Colour/Others/0006_02.webp",
+      "assets/images/cases/Colour/Others/0006_03.webp",
+      "assets/images/cases/Colour/Others/0006_04.webp",
 
     ],
 
@@ -139,6 +139,7 @@ const CASES = {
     }
   }
 };
+
 
 
 
