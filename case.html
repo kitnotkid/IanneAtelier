@@ -8,138 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
   <title>Case – ianne atelier</title>
-
-  <style>
-    :root {
-      --bg-main: #f6f4f1;          /* 奶油白 */
-      --bg-header: #3a2e26;        /* 深褐色 */
-      --bg-card: #ffffff;
-      --text-main: #2b2b2b;
-      --text-muted: #8a8a8a;
-      --accent: #b7a58c;           /* 米色 */
-      --border-soft: #e5e2dd;
-      --text-light: #f2efe9;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
-      background: var(--bg-main);
-      color: var(--text-main);
-      line-height: 1.6;
-    }
-
-    a { text-decoration: none; color: inherit; }
-
-    /* ---------- Header ---------- */
-    header {
-      background: var(--bg-header);
-      color: var(--text-light);
-    }
-
-    .header-inner {
-      font-family: 'Cormorant',serif;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 25px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .brand {
-      font-size: 30px;
-      letter-spacing: 1.5px;
-    }
-
-    .lang-switch button {
-      background: none;
-      border: 1px solid rgba(255,255,255,0.4);
-      color: var(--text-light);
-      font-size: 12px;
-      padding: 4px 10px;
-      margin-left: 6px;
-      cursor: pointer;
-    }
-
-    .lang-switch button.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
-    }
-
-    /* ---------- Layout ---------- */
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 56px 20px 80px;
-    }
-
-    .case-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .case-header h1 {
+  <link rel="stylesheet" href=".\assets\css\style.css">
   
-      font-size: 26px;
-      font-weight: 500;
-      margin: 0 0 10px;
-    }
-
-    .case-header p {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin: 0;
-    }
-
-    /* ---------- Image ---------- */
-    .image-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-soft);
-      padding: 18px;
-    }
-
-    .image-card img{
-      width: 100%;
-      display: block;
-    }
-
-    .image-card img + img {
-      margin-top: 16px;
-    }
-    /* ---------- Description ---------- */
-    .case-desc {
-      max-width: 640px;
-      margin: 40px auto 0;
-      font-size: 14px;
-      color: var(--text-muted);
-      text-align: center;
-    }
-
-    /* ---------- CTA ---------- */
-    .cta {
-      margin-top: 64px;
-      text-align: center;
-    }
-
-    .cta a {
-      display: inline-block;
-      padding: 12px 30px;
-      border: 1px solid var(--accent);
-      color: var(--accent);
-      font-size: 13px;
-      letter-spacing: 1px;
-      transition: all 0.2s ease;
-    }
-
-    .cta a:hover {
-      background: var(--accent);
-      color: #fff;
-    }
-  </style>
 </head>
 
 <body>
@@ -158,7 +28,7 @@
 
   <div class="case-header">
     <h1 id="title"></h1>
-    <p id="meta"></p>
+    <!-- <p id="meta"></p> -->
   </div>
 
   <div class="image-card" id="image-gallery">
@@ -189,7 +59,7 @@
 
   function setLang(lang) {
     document.getElementById("title").textContent = caseData.title[lang];
-    document.getElementById("meta").textContent = `${caseData.brand} · ${caseData.service}`;
+    // document.getElementById("meta").textContent = `${caseData.brand} · ${caseData.service[lang]}`;
     document.getElementById("desc").textContent = caseData.desc[lang];
     document.getElementById("cta-text").textContent = lang === "en"
       ? "REQUEST ASSESSMENT"
