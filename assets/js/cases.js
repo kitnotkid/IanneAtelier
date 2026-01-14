@@ -6,7 +6,10 @@ const CASES = {
   /* ---------- Case 0001 ---------- */
   "0001": {
     brand: "LV",
-    service: "Cleaning",
+    service: {
+      en: "Cleaning",
+      zh: "清洗"
+    },
     image: "assets/images/cases/cleaning/lv/0002_01.webp",
 
     title: {
@@ -23,7 +26,10 @@ const CASES = {
   /* ---------- Case 0002 ---------- */
   "0002": {
     brand: "Coach",
-    service: "Cleaning",
+    service: {
+      en: "Cleaning",
+      zh: "清洗"
+    },
     image: "assets/images/cases/cleaning/coach/0001_01.webp",
 
     title: {
@@ -40,7 +46,10 @@ const CASES = {
   /* ---------- Case 0003 (Others / Prada) ---------- */
   "0003": {
     brand: "Prada",
-    service: "Cleaning",
+    service: {
+      en: "Cleaning",
+      zh: "清洗"
+    },
     images: ["assets/images/cases/cleaning/others/0003_01.webp"],
 
     title: {
@@ -57,7 +66,10 @@ const CASES = {
    /* ---------- Case 0004 (Others / Prada) ---------- */
   "0004": {
     brand: "Prada",
-    service: "Cleaning",
+    service: {
+      en: "Cleaning",
+      zh: "清洗"
+    },
     images: ["assets/images/cases/cleaning/others/0004_00.webp",
      "assets/images/cases/cleaning/others/0004_01.webp",
      "assets/images/cases/cleaning/others/0004_02.webp",
@@ -74,16 +86,18 @@ const CASES = {
     }
   },
 
-    /* ---------- Case 0005 (Coach) ---------- */
+    /* ---------- Case 0005 (Others / Prada) ---------- */
   "0005": {
     brand: "Coach",
-    service: "Colour",
+    service: {
+      en: "Colour",
+      zh: "补色"
+    },
     images: [
       "assets/images/cases/Colour/Coach/0005_00.webp",
       "assets/images/cases/Colour/Coach/0005_01.webp",
       "assets/images/cases/Colour/Coach/0005_02.webp",
       "assets/images/cases/Colour/Coach/0005_03.webp",
-
     ],
 
     title: {
@@ -97,10 +111,6 @@ const CASES = {
     }
   }
 };
-
-
-
-
 
 
 
