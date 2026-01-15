@@ -84,6 +84,10 @@
       document.querySelector(".page-title p").textContent =
       lang === "en" ? "Selected restoration works" : "精选修复案例";
 
+      document.getElementById("cta-text").textContent = lang === "en"
+      ? "REQUEST ASSESSMENT"
+      : "获取免费评估";
+
       document.getElementById("btn-en").classList.toggle("active", lang === "en");
       document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
     } 
@@ -96,6 +100,7 @@
 
 </body>
 </html>
+
 
 
 
