@@ -81,13 +81,14 @@ header {
 }
 
 .lang-switch button {
-  background: none;
-  border: 1px solid rgba(255,255,255,0.4);
-  color: var(--text-light);
-  font-size: 12px;
-  padding: 4px 10px;
-  margin-left: 6px;
-  cursor: pointer;
+   background: none;
+   min-width: 44px;
+   border: 1px solid rgba(255,255,255,0.4);
+   color: var(--text-light);
+   font-size: 12px;
+   padding: 4px 10px;
+   margin-left: 6px;
+   cursor: pointer;
 }
 
 .lang-switch button.active {
@@ -96,6 +97,17 @@ header {
   color: #fff;
 }
 
+.header-actions a,
+.header-actions button {
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
 /* ==================================================
    Layout Containers
    ================================================== */
@@ -274,4 +286,5 @@ header {
   background: var(--accent);
   color: #fff;
 }
+
 
