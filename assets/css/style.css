@@ -55,6 +55,26 @@ header {
   align-items: center;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-cta {
+  border: 1px solid var(--accent);
+  padding: 6px 14px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: var(--text-light);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.header-cta:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 .brand {
   font-size: 30px;
   letter-spacing: 1.5px;
@@ -254,3 +274,4 @@ header {
   background: var(--accent);
   color: #fff;
 }
+
