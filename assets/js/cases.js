@@ -110,7 +110,7 @@ const CASES = {
       en: "Original colour had faded unevenly due to wear and exposure.The surface was carefully cleaned and colour-corrected to restore depth and consistency while preserving the original leather texture.",
       zh: "因日常使用与环境影响，包身颜色出现不均匀褪色。经过细致清洁与补色处理，在保留原有皮质纹理的前提下，恢复整体色泽与层次。"
     }
-  }
+  },
 
    /* ---------- Case 0006 (Others / Braun Buffel) ---------- */
   "0006": {
@@ -139,6 +139,7 @@ const CASES = {
     }
   }
 };
+
 
 
 
