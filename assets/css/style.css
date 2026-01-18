@@ -100,16 +100,6 @@ header {
   border-color: var(--accent);
   color: #fff;
 }
-
-.header-actions a,
-.header-actions button {
-  height: 32px;
-  font-size: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
 /* ==================================================
    Layout Containers
    ================================================== */
