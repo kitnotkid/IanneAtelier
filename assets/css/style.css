@@ -58,19 +58,16 @@ header {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .header-cta {
-   width: 50px;
+   width: 32px;
    height: 32px;
    border: 1px solid var(--accent);
-   padding: 6px 14px;
-   font-size: 12px;
-   letter-spacing: 0.5px;
    color: var(--text-light);
    transition: background 0.2s ease, color 0.2s ease;
-   display: inline-flex;
+   display: flex;
    align-items: center;
    justify-content: center;
 }
@@ -86,15 +83,16 @@ header {
 }
 
 .lang-switch button {
-   width: 50px;
   height: 32px;
-   background: none;
-   border: 1px solid rgba(255,255,255,0.4);
-   color: var(--text-light);
-   font-size: 12px;
-   padding: 4px 10px;
-   margin-left: 6px;
-   cursor: pointer;
+  min-width: 50px;
+
+  padding: 0 10px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: var(--text-light);;
 }
 
 .lang-switch button.active {
@@ -106,7 +104,6 @@ header {
 .header-actions a,
 .header-actions button {
   height: 32px;
-  line-height: 32px;
   font-size: 12px;
   padding: 0 14px;
   display: inline-flex;
