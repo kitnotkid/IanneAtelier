@@ -74,7 +74,7 @@ header {
    align-items: center;
    justify-content: center;
    box-sizing: border-box; */
-    background: var(--text);
+    background: #fff;
     color: var(--text-light);
     padding: 10px 24px;
     border-radius: 6px;
