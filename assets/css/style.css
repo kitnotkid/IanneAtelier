@@ -272,7 +272,7 @@ PROCESS SECTION - BUILD CONFIDENCE
 .process-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 55px 24px;
+  padding: 30px 24px;
   /* background: #fff; */
 }
 
@@ -372,27 +372,27 @@ PROCESS SECTION - BUILD CONFIDENCE
     padding: 18px 16px;
   }
 
-  /* 品牌允许占主要空间 */
   .brand {
     font-size: 22px;
     line-height: 1.2;
   }
 
-  /* 右侧动作区重新布局 */
   .header-actions {
     gap: 10px;
   }
 
-  /* WhatsApp CTA 保留 */
   .header-cta {
     width: 32px;
     height: 32px;
   }
 
-  /* ❗隐藏语言文字按钮（关键） */
   .lang-switch button {
     display: none;
   }
+
+  .process-section {
+      padding: 48px 16px;
+    }
 }
 
 
