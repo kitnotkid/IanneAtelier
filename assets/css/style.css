@@ -72,9 +72,9 @@ header {
    transition: background 0.2s ease, color 0.2s ease;
    display: flex;
    align-items: center;
-   justify-content: center;
-   box-sizing: border-box; */
-    background: #fff;
+   justify-content: center;*/
+   box-sizing: border-box; 
+    background: transparent;
     color: var(--text-light);
     padding: 10px 24px;
     border-radius: 6px;
