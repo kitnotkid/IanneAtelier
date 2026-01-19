@@ -64,15 +64,6 @@ header {
 }
 
 .header-cta {
-   /* width: 32px;
-   height: 32px;
-
-   border-radius: 13px;
-   color: var(--text-light);
-   transition: background 0.2s ease, color 0.2s ease;
-   display: flex;
-   align-items: center;
-   justify-content: center;*/
    border: 1px solid var(--accent);
    box-sizing: border-box; 
     background: var(--accent);
@@ -106,15 +97,6 @@ header {
 }
 
 .lang-switch button {
-  /* height: 32px;
-  min-width: 50px;
-  padding: 0 10px;
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: 1px solid rgba(255,255,255,0.4);
-  color: var(--text-light); */
     background: transparent;
       border: none;
       color: var(--text-light);
@@ -125,9 +107,6 @@ header {
 }
 
 .lang-switch button.active {
-  /* background: var(--accent);
-  border-color: var(--accent);
-  color: #fff; */
   background: var(--accent);
       color: #fff;
 }
@@ -293,7 +272,7 @@ PROCESS SECTION - BUILD CONFIDENCE
 .process-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 24px;
+  padding: 55px 24px;
   /* background: #fff; */
 }
 
