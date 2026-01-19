@@ -106,6 +106,10 @@ header {
       transition: all 0.2s ease;
 }
 
+.lang-switch :hover {
+  background: var(--accent);
+}
+
 .lang-switch button.active {
   background: var(--accent);
       color: #fff;
