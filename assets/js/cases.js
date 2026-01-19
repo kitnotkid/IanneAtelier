@@ -137,6 +137,27 @@ const CASES = {
       en: "Original colour had faded unevenly due to wear and exposure.The surface was carefully cleaned and colour-corrected to restore depth and consistency while preserving the original leather texture.",
       zh: "因日常使用与环境影响，包身颜色出现不均匀褪色。经过细致清洁与补色处理，在保留原有皮质纹理的前提下，恢复整体色泽与层次。"
     }
+  },
+
+  "0007": {
+    brand: "Others",
+    service: {
+      en: "Colour",
+      zh: "补色"
+    },
+    images: [
+      "assets/images/cases/Colour/Others/0007_00.webp",
+    ],
+
+    title: {
+      en: "Pink Bag Colour Restore",
+      zh: "粉色包包补色"
+    },
+
+    desc: {
+      en: "The handle showed visible colour wear and small marks from regular use. Localised colour touch-up was carried out to even out the tone while maintaining the original leather texture.",
+      zh: "手柄部位因日常使用出现明显褪色与细小痕迹。通过局部补色处理，使颜色更均匀，同时保留原有皮革质感。"
+    }
   }
 };
 
