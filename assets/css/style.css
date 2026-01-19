@@ -75,7 +75,7 @@ header {
    justify-content: center;*/
    border: 1px solid var(--accent);
    box-sizing: border-box; 
-    background: transparent;
+    background: var(--accent);
     color: var(--text-light);
     padding: 10px 24px;
     border-radius: 6px;
