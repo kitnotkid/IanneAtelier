@@ -45,7 +45,7 @@ const CASES = {
 
   /* ---------- Case 0003 (Others / Prada) ---------- */
   "0003": {
-    brand: "Prada",
+    brand: "MCM",
     service: {
       en: "Cleaning",
       zh: "清洗"
@@ -53,13 +53,13 @@ const CASES = {
     images: ["assets/images/cases/cleaning/others/0003_01.webp"],
 
     title: {
-      en: "Prada Bag Cleaning",
-      zh: "Prada 包包清洗护理"
+      en: "MCM Bag Cleaning",
+      zh: "MCM 包包清洗护理"
     },
 
     desc: {
-      en: "Professional cleaning carried out on a Prada bag with visible signs of wear.",
-      zh: "针对有明显使用痕迹的 Prada 包进行专业清洗护理。"
+      en: "Professional cleaning carried out on a MCM bag with visible signs of wear.",
+      zh: "针对有明显使用痕迹的 MCM 包进行专业清洗护理。"
     }
   },
 
@@ -157,6 +157,28 @@ const CASES = {
     desc: {
       en: "The handle showed visible colour wear and small marks from regular use. Localised colour touch-up was carried out to even out the tone while maintaining the original leather texture.",
       zh: "手柄部位因日常使用出现明显褪色与细小痕迹。通过局部补色处理，使颜色更均匀，同时保留原有皮革质感。"
+    }
+  },
+
+  "0008": {
+    brand: "MCM",
+    service: {
+      en: "Colour",
+      zh: "补色"
+    },
+    images: [
+      "assets/images/cases/Colour/Others/0008_00.webp",
+      "assets/images/cases/Colour/Others/0008_01.webp",
+    ],
+
+    title: {
+      en: "MCM Colour Restore",
+      zh: "MCM 包包补色"
+    },
+
+    desc: {
+      en: "Minor colour wear and surface marks were visible around the corner and seam areas. Targeted colour touch-up was applied to improve tone consistency while preserving the original leather grain.",
+      zh: "包包边角与缝线处可见轻微褪色及表面使用痕迹。通过局部补色处理，改善颜色一致性，同时保留原有皮革纹理。"
     }
   }
 };
