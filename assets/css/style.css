@@ -336,6 +336,10 @@ PROCESS SECTION - BUILD CONFIDENCE
   background: var(--section-bg-alt);
 }
 
+.process-section:last-of-type {
+  padding-bottom: 96px;
+}
+
 /* ==================================================
    CTA
    ================================================== */
