@@ -274,7 +274,7 @@ PROCESS SECTION - BUILD CONFIDENCE
 ================================================== */
 
 .process-section {
-  max-width: max-content;
+  max-width: 100%;
   margin: 0 auto;
   padding: 30px 24px;
   /* background: #fff; */
