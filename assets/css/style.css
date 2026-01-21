@@ -398,7 +398,7 @@ PROCESS SECTION - BUILD CONFIDENCE
     justify-content: center;  
   }
 
-  .lang-switch button {
+  .lang-switch {
     display: none;
   }
 
