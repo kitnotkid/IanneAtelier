@@ -21,7 +21,31 @@
 
     <!-- future form -->
     <section id="form-root">
-      <!-- inputs will be injected here -->
+      <form id="caseForm">
+
+        <label>Brand</label><br />
+        <input type="text" id="brand" required /><br /><br />
+
+        <label>Service</label><br />
+        <input type="text" id="service" required /><br /><br />
+
+        <label>Image Count</label><br />
+        <input type="number" id="imageCount" min="1" value="1" required /><br /><br />
+
+        <label>Title (EN)</label><br />
+        <input type="text" id="titleEn" required /><br /><br />
+
+        <label>Title (ZH)</label><br />
+        <input type="text" id="titleZh" required /><br /><br />
+
+        <label>Description (EN)</label><br />
+        <textarea id="descEn" rows="3"></textarea><br /><br />
+
+        <label>Description (ZH)</label><br />
+        <textarea id="descZh" rows="3"></textarea><br /><br />
+
+      </form>
+
     </section>
 
     <!-- future output -->
@@ -64,6 +88,25 @@
       `;
     }
   })();
+
+  document.getElementById('caseForm').addEventListener('input', () => {
+      const data = {
+        caseId: document.getElementById('caseId').value,
+        brand: document.getElementById('brand').value,
+        service: document.getElementById('service').value,
+        imageCount: document.getElementById('imageCount').value,
+        title: {
+          en: document.getElementById('titleEn').value,
+          zh: document.getElementById('titleZh').value
+        },
+        desc: {
+          en: document.getElementById('descEn').value,
+          zh: document.getElementById('descZh').value
+        }
+      };
+
+      console.log('[C2] form data:', data);
+    });
 </script>
 
 </body>
