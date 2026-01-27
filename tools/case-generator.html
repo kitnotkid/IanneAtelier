@@ -6,7 +6,7 @@
   <title>Case Generator</title>
 
   <!-- reuse global style -->
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
 <body>
@@ -36,24 +36,30 @@
 
     try {
       const res = await fetch('../assets/js/cases.js', { cache: 'no-store' });
-
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status}`);
-      }
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
       const text = await res.text();
 
-      // 只做可读性验证，不解析、不执行
-      console.log('[B1] cases.js loaded, length:', text.length);
+      // B2：只用正则提取 "000x": {
+      const matches = [...text.matchAll(/"(\d{4})"\s*:\s*{/g)];
+      if (matches.length === 0) throw new Error('No Case ID found');
+
+      const ids = matches.map(m => parseInt(m[1], 10));
+      const lastId = Math.max(...ids);
+      const nextId = String(lastId + 1).padStart(4, '0');
+
+      console.log('[B2] Case IDs:', ids);
+      console.log('[B2] Last:', String(lastId).padStart(4, '0'), 'Next:', nextId);
 
       status.innerHTML = `
-        <p>cases.js loaded successfully.</p>
-        <p>File size: ${text.length} chars</p>
+        <p>Cases found: ${ids.length}</p>
+        <p>Last Case ID: ${String(lastId).padStart(4, '0')}</p>
+        <p><strong>Next Case ID: ${nextId}</strong></p>
       `;
     } catch (err) {
-      console.error('[B1] Failed to load cases.js:', err);
+      console.error('[B2] Error:', err);
       status.innerHTML = `
-        <p style="color:red;">Failed to load cases.js</p>
+        <p style="color:red;">B2 failed</p>
         <p>${err.message}</p>
       `;
     }
