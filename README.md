@@ -1,4 +1,4 @@
-https://kitnotkid.github.io/IanneAtelier/
+https://ianneatelier.pages.dev/
 
 # IANNE ATELIER – Project README
 
