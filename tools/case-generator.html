@@ -16,7 +16,10 @@
 
     <!-- status / debug -->
     <section id="status">
-      <p>Tool loaded.</p>
+      <section>
+        <label>Next Case ID</label><br />
+        <input id="caseId" type="text" disabled />
+      </section>
     </section>
 
     <!-- future form -->
@@ -71,6 +74,7 @@
       const ids = matches.map(m => parseInt(m[1], 10));
       const lastId = Math.max(...ids);
       const nextId = String(lastId + 1).padStart(4, '0');
+      document.getElementById('caseId').value = nextId;
 
       console.log('[B2] Case IDs:', ids);
       console.log('[B2] Last:', String(lastId).padStart(4, '0'), 'Next:', nextId);
