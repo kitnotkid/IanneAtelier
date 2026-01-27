@@ -30,5 +30,35 @@
     </section>
   </main>
 
+<script>
+  (async function () {
+    const status = document.getElementById('status');
+
+    try {
+      const res = await fetch('../assets/js/cases.js', { cache: 'no-store' });
+
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}`);
+      }
+
+      const text = await res.text();
+
+      // 只做可读性验证，不解析、不执行
+      console.log('[B1] cases.js loaded, length:', text.length);
+
+      status.innerHTML = `
+        <p>cases.js loaded successfully.</p>
+        <p>File size: ${text.length} chars</p>
+      `;
+    } catch (err) {
+      console.error('[B1] Failed to load cases.js:', err);
+      status.innerHTML = `
+        <p style="color:red;">Failed to load cases.js</p>
+        <p>${err.message}</p>
+      `;
+    }
+  })();
+</script>
+
 </body>
 </html>
