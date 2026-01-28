@@ -180,6 +180,28 @@ const CASES = {
       en: "Minor colour wear and surface marks were visible around the corner and seam areas. Targeted colour touch-up was applied to improve tone consistency while preserving the original leather grain.",
       zh: "包包边角与缝线处可见轻微褪色及表面使用痕迹。通过局部补色处理，改善颜色一致性，同时保留原有皮革纹理。"
     }
+  },
+
+  "0009": {
+    brand: "Gucci",
+    service: {
+      en: "Colour Touch-up",
+      zh: "补色"
+    },
+    images: [
+      "assets/images/cases/Colour/Others/0009_00.webp",
+    
+    ],
+
+    title: {
+      en: "Gucci GG Marmont Colour Restore",
+      zh: "Gucci 包包补色"
+    },
+
+    desc: {
+      en: "Colour shading developed over time from regular use. Subtle colour touch-up helped refine the appearance without changing the original character.",
+      zh: "因长期使用，包身侧边颜色出现暗沉与不均匀的色差。通过补色处理改善整体色调平衡，使包包在不改变原有质感的情况下，继续保持良好的使用观感。"
+    }
   }
 };
 
