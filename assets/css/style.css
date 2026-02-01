@@ -211,12 +211,17 @@ header {
 
 .case-info .brand {
   letter-spacing: 0.5px;
+  font-size: 0.75rem;
+  opacity: 0.6;
 }
 
 .case-info .service {
   color: var(--text-muted);
   font-size: 12px;
   margin-top: 4px;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
 }
 
 /* ==================================================
