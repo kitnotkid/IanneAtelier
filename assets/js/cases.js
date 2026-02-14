@@ -199,7 +199,47 @@ const CASES = {
       "en": "Colour shading developed over time from regular use. Subtle colour touch-up helped refine the appearance without changing the original character.",
       "zh": "因长期使用，包身侧边颜色出现暗沉与不均匀的色差。通过补色处理改善整体色调平衡，使包包在不改变原有质感的情况下，继续保持良好的使用观感。"
     }
+  },
+
+  "0010": {
+  "brand": "Others",
+  "service": {
+    "en": "Colour Touch-up",
+    "zh": "局部补色"
+  },
+  "images": [
+    "assets/images/cases/Colour/Others/0010_00.webp",
+    "assets/images/cases/Colour/Others/0010_01.webp"
+  ],
+  "title": {
+    "en": "Colour Touch-Up",
+    "zh": "包包局部补色"
+  },
+  "desc": {
+    "en": "High-contact areas naturally show signs of wear over time.\nThrough targeted colour touch-up, the visual impact of colour loss can be softened, allowing the bag to continue being used with a more refined appearance.",
+    "zh": "日常使用下，高接触部位会逐渐产生色泽损耗。\n经针对性的局部补色修复，使视觉磨损感减弱，让包包维持更协调的使用状态。"
   }
+},
+
+"0011": {
+  "brand": "Others",
+  "service": {
+    "en": "Edge Oil",
+    "zh": "边油修复"
+  },
+  "images": [
+    "assets/images/cases/EdgeOil/Others/0011_00.webp",
+    "assets/images/cases/EdgeOil/Others/0011_01.webp"
+  ],
+  "title": {
+    "en": "Bag Edge Oil Repair",
+    "zh": "包包边油修复"
+  },
+  "desc": {
+    "en": "Edge oil deterioration is a common form of wear over time. While many believe it requires full replacement, targeted repair can often address the affected areas.\nWith controlled refinishing, the visual impact of cracks and peeling can be significantly reduced, allowing the structure to remain intact.",
+    "zh": "长期使用下，边油部位容易产生龟裂与磨损。许多人认为此类问题无法修复，只能更换。\n事实上，透过专业修复技术，可对原有结构进行修整，降低损耗痕迹的可见度，维持整体外观协调。"
+  }
+}
 
 };
 
