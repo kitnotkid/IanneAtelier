@@ -150,3 +150,41 @@ These are deferred until a real, unavoidable need appears.
 > If a change makes future migration harder, it is postponed.
 
 This project favors **engineering restraint** over feature velocity.
+
+=========================================
+Function On Cases.js generation
+System overview:
+
+We use a Google Sheet (sheet name: cases) as the data entry layer.
+A Google Colab notebook performs:
+
+1. Structure validation (column integrity)
+2. Data validation (case_id, service format, image naming pattern, duplicates, empty fields)
+3. History consistency check against existing cases.js (ID-level only)
+4. Incremental JSON generation (only rows where Status != completed)
+
+Important constraints:
+
+- Sheet is NOT the source of truth.
+- cases.js is the single source of truth.
+- Status = completed → already exists in cases.js
+- Status blank → new case to generate
+- The system never auto-commits to GitHub.
+- User manually pastes generated JSON into cases.js.
+
+History checks include:
+- Completed but not in JS → warning
+- Not completed but already in JS → warning
+- JS ID not found in Sheet → warning
+
+Generation output:
+- Only produces incremental `"000X": { ... }` entries.
+- Does not wrap with outer braces.
+- Designed for manual insertion.
+
+This system prioritizes:
+- Structural safety
+- Data integrity
+- Manual control over GitHub commits
+- Minimal automation risk
+=========================================
