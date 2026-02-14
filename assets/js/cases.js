@@ -202,7 +202,7 @@ const CASES = {
   },
 
   "0010": {
-  "brand": "Others",
+  "brand": "",
   "service": {
     "en": "Colour Touch-up",
     "zh": "局部补色"
