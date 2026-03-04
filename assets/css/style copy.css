@@ -64,30 +64,27 @@ header {
 }
 
 .header-cta {
-<<<<<<< HEAD
-     width: 32px;
-    height: 32px;
-    border: 1px solid var(--accent);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    transition: background 0.2s ease, color 0.2s ease;
-=======
-   border: 1px solid var(--accent);
-   box-sizing: border-box; 
-    background: transparent;
-    color: var(--text-light);
-    padding: 10px 24px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
->>>>>>> c0f7f24b8abc7a8fcff9c97ce6e3a315f7b2d14b
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  transition: background 0.2s ease, color 0.2s ease;
+  border: 1px solid var(--accent);
+  box-sizing: border-box; 
+  background: transparent;
+  color: var(--text-light);
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 
@@ -122,17 +119,14 @@ header {
   background: var(--accent);
 }
 
-<<<<<<< HEAD
 .lang-switch button {
   height: 32px;
   min-width: 50px;
   font-size: 12px;
   padding: 0 10px;
-=======
 .lang-switch button.active {
   background: var(--accent);
       color: #fff;
->>>>>>> c0f7f24b8abc7a8fcff9c97ce6e3a315f7b2d14b
 }
 /* ==================================================
    Layout Containers
@@ -440,4 +434,5 @@ PROCESS SECTION - BUILD CONFIDENCE
 .cta-icon {
   width: 18px;
   height: 18px;
+}
 }
