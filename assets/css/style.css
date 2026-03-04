@@ -135,6 +135,7 @@ header {
 
 .container.case {
   max-width: 980px;
+  border-radius: 8px;
 }
 
 /* ==================================================
