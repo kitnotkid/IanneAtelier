@@ -1,10 +1,11 @@
 /* ==================================================
    IANNE ATELIER – Global Style Sheet
-   Single Source of Truth for Visual System
+   Refined Luxury Visual System
    ================================================== */
 
 /* ---------- CSS Variables ---------- */
 :root {
+  /* Elegant Neutral Palette */
   --bg-main: #f6f4f1;
   --bg-header: #3a2e26;
   --bg-card: #ffffff;
@@ -13,8 +14,13 @@
   --accent: #b7a58c;
   --border-soft: #e5e2dd;
   --text-light: #f2efe9;
-  --section-bg-light: var(--bg-main);
-  --section-bg-alt: #ffffff; 
+  
+  /* Sectioning */
+  --section-bg-light: #f6f4f1;
+  --section-bg-alt: #ffffff;
+  
+  /* Animation/Spacing */
+  --transition-slow: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ---------- Reset ---------- */
@@ -24,10 +30,12 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Inter", Arial, sans-serif;
   background: var(--bg-main);
   color: var(--text-main);
-  line-height: 1.6;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -43,88 +51,87 @@ header {
   background: var(--bg-header);
   color: var(--text-light);
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header-inner {
   font-family: 'Cormorant', serif;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 24px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.brand {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  transition: opacity 0.3s ease;
+}
+
+.brand:hover {
+  opacity: 0.8;
+}
+
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
-.header-cta {
-   border: 1px solid var(--accent);
-   box-sizing: border-box; 
-    background: transparent;
-    color: var(--text-light);
-    padding: 10px 24px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.header-cta:hover {
-  background: var(--accent);
-  color: #fff;
-}
-
-.brand {
-  font-size: 30px;
-  letter-spacing: 1.5px;
-}
 .lang-switch {
   display: flex;
-      gap: 0;
-      border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 6px;
-      overflow: hidden;
+  gap: 8px;
 }
 
 .lang-switch button {
-    background: transparent;
-      border: none;
-      color: var(--text-light);
-      padding: 8px 14px;
-      font-size: 12px;
-      cursor: pointer;
-      transition: all 0.2s ease;
+  background: transparent;
+  border: none;
+  color: rgba(242, 239, 233, 0.5);
+  padding: 8px 12px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-slow);
 }
 
-.lang-switch :hover {
-  background: var(--accent);
+.lang-switch button:hover {
+  color: var(--text-light);
 }
 
 .lang-switch button.active {
-  background: var(--accent);
-      color: #fff;
+  color: var(--text-light);
+  position: relative;
 }
+
+.lang-switch button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 1px;
+  background: var(--accent);
+}
+
 /* ==================================================
    Layout Containers
    ================================================== */
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 56px 20px 80px;
+  padding: 120px 40px;
 }
 
-/* case.html uses narrower container */
 .container.case {
   max-width: 980px;
 }
@@ -133,205 +140,38 @@ header {
    Page Title / Hero
    ================================================== */
 
+.hero-section .container {
+  padding: 160px 40px;
+}
+
 .page-title {
   text-align: center;
-  margin-bottom: 56px;
 }
 
 .page-title h1 {
   font-family: 'Cormorant', serif;
-  font-size: 34px;
-  font-weight: 500;
-  margin: 0 0 14px;
+  font-size: 56px;
+  font-weight: 300;
+  margin: 0 0 24px;
+  color: var(--text-main);
+  letter-spacing: 0.02em;
 }
 
 .page-title p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
-  margin: 0;
-  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 500px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 /* ==================================================
    Narrative / Sections
    ================================================== */
 
-.section {
-  max-width: 720px;
-  margin: 0 auto 64px;
-  text-align: center;
-}
-
-.section h2 {
-  font-family: 'Cormorant', serif;
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-.section p {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--text-muted);
-  margin: 0;
-}
-
-/* ==================================================
-   Cases Grid (cases.html)
-   ================================================== */
-
-.case-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 28px;
-}
-
-.case-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-soft);
-  border-radius: 13px;
-  padding: 14px;
-  cursor: pointer;
-  transition: transform 0.15s ease;
-}
-
-.case-card:hover {
-  transform: translateY(-2px);
-}
-
-.case-card img {
-  width: 100%;
-  display: block;
-}
-
-.case-info {
-  margin-top: 12px;
-  font-size: 13px;
-}
-
-.case-info .brand {
-  letter-spacing: 0.5px;
-  font-size: 0.75rem;
-  opacity: 0.55;
-  font-weight: 400;
-}
-
-.case-info .service {
-  color: var(--text-muted);
-  font-weight: 500; 
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.25rem;
-  text-transform: uppercase;
-}
-
-/* ==================================================
-   Case Page (case.html)
-   ================================================== */
-
-.case-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.case-header h1 {
-  font-size: 26px;
-  font-weight: 500;
-  margin: 0 0 10px;
-}
-
-.case-header p {
-  font-size: 14px;
-  color: var(--text-muted);
-  margin: 0;
-}
-
-/* ---------- Image Card ---------- */
-
-.image-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-soft);
-  border-radius: 13px;
-  padding: 18px;
-}
-
-.image-card img {
-  width: 100%;
-  display: block;
-}
-
-/* spacing for multiple images */
-.image-card img + img {
-  margin-top: 16px;
-}
-
-/* ---------- Case Description ---------- */
-
-.case-desc {
-  max-width: 640px;
-  margin: 40px auto 0;
-  font-size: 14px;
-  color: var(--text-muted);
-  text-align: center;
-}
-
-/* ==================================================
-PROCESS SECTION - BUILD CONFIDENCE
-================================================== */
-
 .process-section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 30px 24px;
-  /* background: #fff; */
-}
-
-.section-title {
-  font-family: 'Cormorant', serif;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 48px;
-  font-weight: 500;
-}
-
-.process-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.process-step {
-  text-align: center;
-  padding: 24px;
-}
-
-.step-number {
-  width: 48px;
-  height: 48px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Cormorant', serif;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 auto 16px;
-}
-
-.step-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.step-desc {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.6;
+  width: 100%;
 }
 
 .process-section:nth-of-type(odd) {
@@ -342,75 +182,287 @@ PROCESS SECTION - BUILD CONFIDENCE
   background: var(--section-bg-alt);
 }
 
-.process-section:last-of-type {
-  padding-bottom: 96px;
+.section {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.section h2 {
+  font-family: 'Cormorant', serif;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 24px;
+  color: var(--text-main);
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 300;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ==================================================
+   Process Steps - Build Confidence
+   ================================================== */
+
+.section-title {
+  font-family: 'Cormorant', serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 300;
+  color: var(--text-main);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-step {
+  text-align: center;
+  padding: 48px 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  transition: var(--transition-slow);
+}
+
+.process-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.03);
+  border-color: var(--accent);
+}
+
+.step-number {
+  font-family: 'Cormorant', serif;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.step-title {
+  font-family: 'Cormorant', serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-main);
+}
+
+.step-desc {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.8;
 }
 
 /* ==================================================
    CTA
    ================================================== */
 
+.cta-section .container {
+  padding: 80px 40px 160px;
+}
+
 .cta {
   text-align: center;
-  margin-top: 80px;
 }
 
 .cta a {
   display: inline-block;
-  border: 1px solid var(--accent);
-  padding: 12px 28px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  color: var(--accent);
-  transition: all 0.2s ease;
+  border: 1px solid var(--text-main);
+  padding: 16px 48px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-main);
+  transition: var(--transition-slow);
 }
 
 .cta a:hover {
-  background: var(--accent);
-  color: #fff;
+  background: var(--text-main);
+  color: var(--bg-main);
 }
 
-.cta-icon {
-  width: 18px;
-  height: 18px;
+/* ==================================================
+   Cases Grid (cases.html) - Preserved & Elevated
+   ================================================== */
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 56px 40px;
+}
+
+.case-card {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: var(--transition-slow);
+}
+
+.case-card:hover {
+  transform: translateY(-4px);
+}
+
+.case-card img {
+  width: 100%;
+  display: block;
+  filter: brightness(0.96);
+  transition: var(--transition-slow);
+}
+
+.case-card:hover img {
+  filter: brightness(1);
+}
+
+.case-info {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.case-info .brand {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.case-info .service {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ==================================================
+   Case Page (case.html) - Preserved & Elevated
+   ================================================== */
+
+.case-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.case-header h1 {
+  font-family: 'Cormorant', serif;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 0 16px;
+}
+
+.case-header p {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.image-card {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.image-card img {
+  width: 100%;
   display: block;
 }
 
+.image-card img + img {
+  margin-top: 40px;
+}
 
-/* =========================
-   Mobile Header Fix
-   ========================= */
+.case-desc {
+  max-width: 640px;
+  margin: 80px auto 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 2;
+}
+
+/* ==================================================
+   Mobile Responsive Rules
+   ================================================== */
+
+@media (max-width: 768px) {
+  .page-title h1 {
+    font-size: 44px;
+  }
+  
+  .section h2 {
+    font-size: 30px;
+  }
+  
+  .container {
+    padding: 80px 24px;
+  }
+  
+  .hero-section .container {
+    padding: 100px 24px;
+  }
+
+  .process-steps {
+    gap: 24px;
+  }
+
+  .process-step {
+    padding: 40px 24px;
+  }
+}
+
 @media (max-width: 480px) {
-
   .header-inner {
-    padding: 18px 16px;
+    padding: 20px 24px;
   }
 
   .brand {
-    font-size: 22px;
-    line-height: 1.2;
-  }
-
-  .header-actions {
-    gap: 10px;
-  }
-
-  .header-cta {
-    width: 32px;
-    height: 32px;
-    padding: 0;                 
-    display: flex;               
-    align-items: center;         
-    justify-content: center;  
+    font-size: 18px;
   }
 
   .lang-switch {
     display: none;
   }
 
-  .process-section {
-      padding: 48px 16px;
-    }
+  .page-title h1 {
+    font-size: 36px;
+  }
+  
+  .section h2 {
+    font-size: 26px;
+  }
+
+  .container {
+    padding: 64px 20px;
+  }
+  
+  .hero-section .container {
+    padding: 80px 20px;
+  }
+
+  .section {
+    padding: 64px 20px;
+  }
+
+  .cta-section .container {
+    padding: 40px 20px 100px;
+  }
 }
-
-
