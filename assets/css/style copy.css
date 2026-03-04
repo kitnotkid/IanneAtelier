@@ -136,12 +136,12 @@ header {
   max-width: 1100px;
   margin: 0 auto;
   padding: 56px 20px 80px;
-  border-radius: 8px;
 }
 
 /* case.html uses narrower container */
 .container.case {
   max-width: 980px;
+  border-radius: 8px;
 }
 
 /* ==================================================
