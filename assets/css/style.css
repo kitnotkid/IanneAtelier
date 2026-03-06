@@ -471,3 +471,90 @@ header {
     padding: 40px 20px 100px;
   }
 }
+
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.case-card{
+  transition:
+  transform 0.45s ease,
+  box-shadow 0.45s ease;
+}
+
+.case-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(0,0,0,0.15);
+}
+
+.case-card img{
+transition:transform 0.8s ease;
+}
+
+.case-card:hover img{
+  transform:scale(1.04);  
+}
+
+.hero-image{
+  overflow:hidden;
+}
+
+.hero-image img{
+  transition:transform 1.4s ease;
+}
+
+.hero-image:hover img{
+  transform:scale(1.06);
+}
+
+button,
+.cta-button{
+  transition:
+  transform .3s ease,
+  box-shadow .3s ease;
+}
+
+button:hover,
+  .cta-button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+nav a{
+  position:relative;
+}
+
+nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0;
+  height:1px;
+  background:#000;
+  transition:width .3s ease;
+}
+
+nav a:hover::after{
+  width:100%;
+}
+
+.case-gallery img{
+opacity:0;
+transform:translateY(30px);
+animation:galleryReveal .8s forwards;
+}
+
+@keyframes galleryReveal{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}

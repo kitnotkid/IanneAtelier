@@ -10,7 +10,7 @@ const CASES = {
       en: "Cleaning",
       zh: "清洗"
     },
-    image: "assets/images/cases/cleaning/lv/0002_01.webp",
+    image: ["assets/images/cases/cleaning/lv/0002_01.webp"],
 
     title: {
       en: "LV Bag Cleaning",
@@ -30,7 +30,7 @@ const CASES = {
       en: "Cleaning",
       zh: "清洗"
     },
-    image: "assets/images/cases/cleaning/coach/0001_01.webp",
+    image: ["assets/images/cases/cleaning/coach/0001_01.webp"],
 
     title: {
       en: "Coach Bag Cleaning",
@@ -97,7 +97,7 @@ const CASES = {
       "assets/images/cases/Colour/Coach/0005_00.webp",
       "assets/images/cases/Colour/Coach/0005_01.webp",
       "assets/images/cases/Colour/Coach/0005_02.webp",
-      "assets/images/cases/Colour/Coach/0005_03.webp",
+      "assets/images/cases/Colour/Coach/0005_03.webp"
 
     ],
 
@@ -124,7 +124,7 @@ const CASES = {
       "assets/images/cases/Colour/Others/0006_01.webp",
       "assets/images/cases/Colour/Others/0006_02.webp",
       "assets/images/cases/Colour/Others/0006_03.webp",
-      "assets/images/cases/Colour/Others/0006_04.webp",
+      "assets/images/cases/Colour/Others/0006_04.webp"
 
     ],
 
@@ -146,7 +146,7 @@ const CASES = {
       zh: "补色"
     },
     images: [
-      "assets/images/cases/Colour/Others/0007_00.webp",
+      "assets/images/cases/Colour/Others/0007_00.webp"
     ],
 
     title: {
@@ -168,7 +168,7 @@ const CASES = {
     },
     images: [
       "assets/images/cases/Colour/Others/0008_00.webp",
-      "assets/images/cases/Colour/Others/0008_01.webp",
+      "assets/images/cases/Colour/Others/0008_01.webp"
     ],
 
     title: {
@@ -190,6 +190,7 @@ const CASES = {
     },
     "images": [
       "assets/images/cases/Colour/Others/0009_00.webp"
+    
     ],
     "title": {
       "en": "Gucci GG Marmont Colour Restore",
