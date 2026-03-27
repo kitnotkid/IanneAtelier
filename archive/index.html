@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <title>ianne atelier</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="header-inner"> 
+
+    <a href="index.html" class="brand">IANNE ATELIER</a>
+
+    <div class="header-actions">
+
+      <div class="lang-switch">
+        <button id="btn-en">EN</button>
+        <button id="btn-zh">中文</button>
+      </div>
+
+    </div>
+    
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<section class="process-section hero-section reveal">
+  <div class="container">
+    <!-- HERO / BRAND POSITION -->
+    <div class="page-title">
+      <h1 id="hero-title">Luxury Restoration Atelier</h1>
+      <p id="hero-sub">
+        Specialist care for leather goods, handbags, and treasured pieces
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND STORY (PLACEHOLDER) -->
+<!-- NARRATIVE 1 : IDENTITY -->
+<section class="process-section reveal">
+  <div class="container section" id="narrative-identity">
+    <h2 id="n1-title"></h2>
+    <p id="n1-text"></p>
+  </div>
+</section>
+  
+<!-- NARRATIVE 2 : CRAFT / PROCESS -->
+<section class="process-section reveal">
+  <div class="container section" id="narrative-craft">
+    <h2 id="n2-title"></h2>
+    <p id="n2-text"></p>
+  </div>
+</section>
+  
+<!-- NARRATIVE 3 : RESULT / PROMISE -->
+<section class="process-section reveal">
+  <div class="container section" id="narrative-result">
+    <h2 id="n3-title"></h2>
+    <p id="n3-text"></p>
+  </div>
+</section>
+
+<!-- CUSTOMER FEEDBACK (PLACEHOLDER) -->
+<section class="process-section reveal">
+  <div class="container section" id="feedback-section">
+    <h2 id="feedback-title">Client Feedback</h2>
+    <p id="feedback-text">
+      Words shared by clients who entrusted their cherished pieces to our atelier.
+      This section will present selected voices and trust signals in the future.
+    </p>
+  </div>
+</section>
+
+<section class="process-section reveal" id="how-it-works">
+  <div class="container">
+    <h2 class="section-title" id="process-title">How It Works</h2>
+
+    <div class="process-steps">
+
+      <!-- STEP 1 -->
+      <div class="process-step">
+        <div class="step-number">01</div>
+        <div class="step-title" id="step1-title">Send a photo (no commitment)</div>
+        <p class="step-desc" id="step1-desc">
+          Send a photo of your bag so we can understand its current condition.
+          This step is only for initial assessment and does not start any repair process.
+        </p>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="process-step">
+        <div class="step-number">02</div>
+        <div class="step-title" id="step2-title">Initial assessment</div>
+        <p class="step-desc" id="step2-desc">
+          We assess whether restoration is possible and whether it is worth considering.
+          At this stage, we may only ask about the item’s actual condition.
+          No decision is required.
+        </p>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="process-step">
+        <div class="step-number">03</div>
+        <div class="step-title" id="step3-title">You decide what’s next</div>
+        <p class="step-desc" id="step3-desc">
+          If you choose to proceed, we will explain the next steps clearly.
+          If not, there is no obligation to continue.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="process-section cta-section reveal">
+  <div class="container cta">
+    <a href="cases.html" id="cta-text">View Case Gallery</a>
+  </div>
+</section>
+
+<!-- ===== LANGUAGE SWITCH (UI LEVEL ONLY) ===== -->
+<script>
+  const TEXT = {
+    en: {
+      "hero-title": "The Art of Leather Restoration & Preservation",
+    "hero-sub": "Specialized care for your most cherished handbags and leather heirlooms.",
+    "n1-title": "An Atelier of Quiet Dedication",
+    "n1-text": "IANNE ATELIER is a sanctuary for preservation, where we restore the beauty and integrity of your most valued leather goods.",
+    "n2-title": "Honoring the Original Craft",
+    "n2-text": "We believe in a disciplined approach—every restoration is a delicate balance of technical expertise and deep respect for the original maker's intent.",
+    "n3-title": "Restoring Stories, Not Just Bags",
+    "n3-text": "Our goal is to ensure your treasured pieces continue their journey with you, preserving their legacy for years to come.",
+    "feedback-title": "Kind Words from Our Clients",
+    "feedback-text": "Heartfelt stories shared by those who have entrusted their cherished items to our care.",
+    "cta-text": "Explore the Gallery",
+    "process-title": "Begin Your Restoration Journey",
+    "step1-title": "1. Share a Glimpse",
+    "step1-desc": "Send a simple photograph of your item. This helps us understand its story and current condition without any initial commitment.",
+    "step2-title": "2. Personal Assessment",
+    "step2-desc": "We evaluate the possibility of restoration with honesty. We focus on what is best for the item’s longevity, helping you understand its true condition.",
+    "step3-title": "3. Your Choice",
+    "step3-desc": "If you feel ready to proceed, we will guide you through the next steps. There is never any obligation; the decision to continue is entirely yours."
+    },
+
+    zh: {
+      "hero-title": "匠心皮具修复与情感延续",
+    "hero-sub": "为您珍爱的手袋与皮具，提供专业且细腻的修复护理。",
+    "n1-title": "不仅是修复，更是守护",
+    "n1-text": "IANNE ATELIER 是一处专注于保存的工坊。我们用心修复每一件承载记忆的物件，找回它最初的温润与光彩。",
+    "n2-title": "敬畏工艺，克制修复",
+    "n2-text": "我们坚持独立评估每一件作品，以克制且专业的技法，在修复的同时尽可能保留岁月赋予的独特韵味。",
+    "n3-title": "让珍爱，得以传承",
+    "n3-text": "我们的目标是延长物件的使用寿命，让每一份珍贵的情感都能在时光中优雅延续。",
+    "feedback-title": "客户的温情反馈",
+    "feedback-text": "感谢每一位将珍贵物件托付于工坊的客户，这里记录了他们的真实心声。",
+    "cta-text": "浏览修复案例",
+    "process-title": "咨询与开启",
+    "step1-title": "1. 影像初见",
+    "step1-desc": "只需发送一张照片，让我们初步了解物件的现状。这仅用于初步沟通，不涉及任何修复承诺。",
+    "step2-title": "2. 诚实评估",
+    "step2-desc": "我们会基于专业经验，判断修复的可行性。我们只建议对物件真正有益的方案，您可以根据评估结果再行考量。",
+    "step3-title": "3. 由您决定",
+    "step3-desc": "如果您决定开始修复，我们会详细说明后续安排；若您选择暂缓，我们也完全尊重您的决定。"
+    }
+  };
+
+  function setLang(lang) {
+    // toggle button state
+    document.getElementById("btn-en")?.classList.toggle("active", lang === "en");
+    document.getElementById("btn-zh")?.classList.toggle("active", lang === "zh");
+
+    // inject text safely
+    const dict = TEXT[lang];
+    Object.keys(dict).forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = dict[id];
+    });
+  }
+
+  document.getElementById("btn-en")?.addEventListener("click", () => setLang("en"));
+  document.getElementById("btn-zh")?.addEventListener("click", () => setLang("zh"));
+
+  setLang("en");
+</script>
+
+<script src="assets/js/animation.js"></script>
+
+</body>
+</html>
