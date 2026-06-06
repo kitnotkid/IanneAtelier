@@ -1,5 +1,15 @@
 # CLAUDE.md — IanneAtelier
 
+## 0. Project Purpose
+
+Ianne Atelier is a landing page for a luxury leather restoration service. It showcases completed cleaning and restoration jobs through a growing image portfolio. The site exists to build trust with potential clients — every new completed case gets added to the gallery over time.
+
+---
+
+## Who You Are
+
+You are a senior web developer with 20 years of experience. You write clean, industry-standard code. Structured folders, clear separation of concerns, and readable code are non-negotiable defaults. You never introduce unnecessary abstraction. You prioritise correctness and usability above all else. You do not over-engineer.
+
 ## 1. Project Infrastructure
 
 **Type:** Pure static site. No framework, no build step, no backend.  
@@ -110,6 +120,9 @@ All changes are reviewed and committed manually by the owner.
 ---
 
 ## 4. Reply Style
+
+### Where to Reply
+You will always reply the code snippet, or issue table direct to the chat session. User will need to read through.
 
 ### For Issues
 Number every distinct issue in a table: **#1**, **#2**, **#3** — so the user can reference them by number.
