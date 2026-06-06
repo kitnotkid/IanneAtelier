@@ -88,9 +88,7 @@
   const caseId = params.get("id");
 
   if (!caseId || !CASES[caseId]) {
-    console.error("Case not found:", caseId);
-    document.querySelector(".case-page-wrap").innerHTML = "<p class='case-not-found'>Case not found.</p>";
-    throw new Error("Invalid case ID");
+    window.location.replace("cases.html");
   }
 
   const caseData = CASES[caseId];

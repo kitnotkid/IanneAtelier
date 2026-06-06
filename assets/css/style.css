@@ -919,52 +919,9 @@ footer {
   .footer-note { text-align: left; }
 }
 
-/* ==================================================
-   CASE PAGE — Add these rules to style.css
-   ================================================== */
-
-/* Header: transparent → frosted on scroll
-   (shared with index.html — add once) */
-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  background: transparent;
-  transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-              backdrop-filter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-header.scrolled {
-  background: rgba(250, 248, 244, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--linen, #e8e2d9);
-}
-
-/* Brand colour flips on scroll */
-.brand {
-  color: var(--cream, #faf8f4);
-  transition: color 0.5s ease, opacity 0.3s ease;
-}
-
-header.scrolled .brand {
-  color: var(--charcoal, #2c2825);
-}
-
-/* Lang switch colour flips on scroll */
-header.scrolled .lang-switch button        { color: rgba(44,40,37,0.4); }
-header.scrolled .lang-switch button.active { color: var(--charcoal, #2c2825); }
-header.scrolled .lang-switch button:hover  { color: var(--charcoal, #2c2825); }
-
-/* Instagram icon in header */
-.header-cta {
-  display: flex;
-  align-items: center;
-  color: rgba(250,248,244,0.55);
-  transition: color 0.4s ease;
-}
-.header-cta:hover              { color: var(--cream, #faf8f4); }
-header.scrolled .header-cta   { color: var(--warm-stone, #9e9188); }
+/* ================================================
+   CASE PAGE
+   ================================================ */
 
 /* ── Case page wrapper ── */
 .case-page-wrap {
@@ -1091,69 +1048,6 @@ header.scrolled .header-cta   { color: var(--warm-stone, #9e9188); }
 .case-page-cta {
   text-align: center;
   padding: 72px 0 120px;
-}
-
-/* promise-cta is shared with index.html */
-.promise-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  background: var(--charcoal, #2c2825);
-  color: var(--cream, #faf8f4);
-  padding: 18px 50px;
-  font-family: var(--sans, 'Jost', sans-serif);
-  font-size: 11px;
-  font-weight: 300;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  transition: background 0.5s cubic-bezier(0.19, 1, 0.22, 1),
-              gap 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-  border: none;
-  cursor: pointer;
-}
-
-.promise-cta:hover {
-  background: var(--bark, #5c4a3a);
-  gap: 22px;
-}
-
-.promise-cta::after {
-  content: '→';
-  font-size: 13px;
-  opacity: 0.55;
-}
-
-/* ── Footer ── */
-footer {
-  background: var(--ink, #1a1614);
-  padding: clamp(52px, 7vw, 88px) clamp(24px, 6vw, 96px);
-}
-
-.footer-inner {
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.footer-brand {
-  font-family: var(--serif-body, 'Cormorant Garamond', serif);
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(245,241,235,0.45);
-}
-
-.footer-note {
-  font-family: var(--sans, 'Jost', sans-serif);
-  font-size: 10px;
-  font-weight: 300;
-  letter-spacing: 0.18em;
-  color: rgba(245,241,235,0.18);
-  text-align: right;
-  line-height: 1.9;
 }
 
 /* ── 404 fallback ── */
