@@ -197,7 +197,7 @@ const CASES = {
     },
 
     "0010": {
-    "brand": "",
+    "brand": "Others",
     "service": {
       "en": "Colour Touch-up",
       "zh": "局部补色"
@@ -313,7 +313,7 @@ const CASES = {
     }
   },
   "0016": {
-    "brand": "longchamp",
+    "brand": "Longchamp",
     "service": {
       "en": "Colour Touch-up",
       "zh": "局部补色"

@@ -85,7 +85,7 @@
           </div>
           <div class="case-info">
             <p class="case-info-service">${serviceText}</p>
-            <p class="case-info-brand">${data.brand ? `<p class="case-info-brand">${data.brand}</p>` : ''}</p>
+            <p class="case-info-brand">${data.brand || ''}</p>
           </div>
         `;
 
