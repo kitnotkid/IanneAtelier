@@ -802,6 +802,9 @@ header.scrolled .lang-switch button.active::after { background: var(--warm-stone
 }
 
 .fp-line:last-child { width: 62%; }
+.fp-line:nth-child(1) { width: 90%; }
+.fp-line:nth-child(2) { width: 80%; }
+
 
 /* ================================================
    FOOTER

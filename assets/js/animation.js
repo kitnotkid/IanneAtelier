@@ -1,13 +1,15 @@
-const revealElements = document.querySelectorAll(".reveal");
-
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("active");
-        }
+window.observeReveal = (function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
     });
-},{
-    threshold:0.12
-});
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
 
-revealElements.forEach(el=>observer.observe(el));
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-stagger')
+    .forEach(el => observer.observe(el));
+
+  return el => observer.observe(el);
+}());

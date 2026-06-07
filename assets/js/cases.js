@@ -3,14 +3,13 @@
    ================================================== */
 
 const CASES = {
-  /* ---------- Case 0001 ---------- */
   "0001": {
     brand: "LV",
     service: {
       en: "Cleaning",
       zh: "清洗"
     },
-    image: ["assets/images/cases/cleaning/lv/0002_01.webp"],
+    images: ["assets/images/cases/cleaning/lv/0002_01.webp"],
 
     title: {
       en: "LV Bag Cleaning",
@@ -23,14 +22,13 @@ const CASES = {
     }
   },
 
-  /* ---------- Case 0002 ---------- */
   "0002": {
     brand: "Coach",
     service: {
       en: "Cleaning",
       zh: "清洗"
     },
-    image: ["assets/images/cases/cleaning/coach/0001_01.webp"],
+    images: ["assets/images/cases/cleaning/coach/0001_01.webp"],
 
     title: {
       en: "Coach Bag Cleaning",
@@ -43,7 +41,6 @@ const CASES = {
     }
   },
 
-  /* ---------- Case 0003 (Others / Prada) ---------- */
   "0003": {
     brand: "MCM",
     service: {
@@ -63,7 +60,6 @@ const CASES = {
     }
   },
 
-   /* ---------- Case 0004 (Others / Prada) ---------- */
   "0004": {
     brand: "Prada",
     service: {
@@ -86,7 +82,6 @@ const CASES = {
     }
   },
 
-    /* ---------- Case 0005 (Others / Prada) ---------- */
   "0005": {
     brand: "Coach",
     service: {
@@ -112,7 +107,6 @@ const CASES = {
     }
   },
 
-   /* ---------- Case 0006 (Others / Braun Buffel) ---------- */
   "0006": {
     brand: "Braun Buffel",
     service: {

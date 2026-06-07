@@ -20,6 +20,15 @@
   <div class="header-inner">
     <a href="index.html" class="brand">Ianne Atelier</a>
     <div class="header-actions">
+      <a href="https://ig.me/m/ianneatelierbagspa"
+        target="_blank"
+        class="header-cta"
+        aria-label="Contact via Instagram">
+        <svg class="cta-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <path fill="currentColor"
+            d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.75-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+        </svg>
+      </a>
       <div class="lang-switch">
         <button id="btn-en">EN</button>
         <button id="btn-zh">中文</button>
@@ -207,8 +216,8 @@
         <div class="feedback-placeholder-row">
           <div class="feedback-placeholder-item">
             <div class="fp-placeholder">
-              <div class="fp-line" style="width:90%"></div>
-              <div class="fp-line" style="width:80%"></div>
+              <div class="fp-line"></div>
+              <div class="fp-line"></div>
               <div class="fp-line"></div>
             </div>
           </div>
@@ -314,19 +323,6 @@
   // Trigger hero entrance
   document.querySelector('.hero').classList.add('loaded');
 
-  // Reveal on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-stagger').forEach(el => {
-    observer.observe(el);
-  });
 </script>
 
 <script src="assets/js/animation.js"></script>

@@ -81,7 +81,7 @@
 </footer>
 
 <!-- Case Registry -->
-<script src="assets/js/cases.js"></script>
+<script src="assets/js/cases.js"></script>>
 
 <script>
   const params = new URLSearchParams(window.location.search);
@@ -115,7 +115,9 @@
     document.getElementById("title").textContent         = caseData.title[lang];
     document.getElementById("desc").textContent          = caseData.desc[lang];
     document.getElementById("service-label").textContent = caseData.service[lang];
-    document.getElementById("brand-label").textContent   = caseData.brand;
+    const brandEl = document.getElementById("brand-label");
+    brandEl.textContent = caseData.brand;
+    brandEl.hidden = !caseData.brand;
     document.getElementById("cta-text").textContent      = lang === "en" ? "Request Assessment" : "获取免费评估";
     document.getElementById("back-label").textContent    = lang === "en" ? "All Cases" : "所有案例";
 
@@ -135,16 +137,6 @@
     siteHeader.classList.toggle('scrolled', window.scrollY > 64);
   }, { passive: true });
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
-
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 
 <script src="assets/js/animation.js"></script>

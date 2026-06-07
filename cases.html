@@ -85,7 +85,7 @@
           </div>
           <div class="case-info">
             <p class="case-info-service">${serviceText}</p>
-            <p class="case-info-brand">${data.brand}</p>
+            <p class="case-info-brand">${data.brand ? `<p class="case-info-brand">${data.brand}</p>` : ''}</p>
           </div>
         `;
 
@@ -93,7 +93,7 @@
       });
 
     // Re-observe new cards
-    document.querySelectorAll('.case-card.reveal').forEach(el => cardObserver.observe(el));
+    document.querySelectorAll('.case-card.reveal').forEach(el => observeReveal(el));
   }
 
   function setLang(newLang) {
@@ -118,9 +118,6 @@
 
   document.getElementById("btn-en").onclick = () => setLang("en");
   document.getElementById("btn-zh").onclick = () => setLang("zh");
-
-  buildGrid();
-  setLang("en");
 </script>
 
 <!-- ===== SCROLL + HEADER BEHAVIORS ===== -->
@@ -131,30 +128,12 @@
     siteHeader.classList.toggle('scrolled', window.scrollY > 64);
   }, { passive: true });
 
-  // Hero reveal
-  const heroObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        heroObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.cases-hero').forEach(el => heroObserver.observe(el));
-
-  // Card staggered reveal
-  const cardObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        cardObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
 </script>
 
 <script src="assets/js/animation.js"></script>
-
+<script>
+  buildGrid();
+  setLang("en"); 
+</script>
 </body>
 </html>
