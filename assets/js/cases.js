@@ -212,7 +212,7 @@ const CASES = {
     title: { en: "Coach Edge Oil Repair", zh: "Coach 包包边油修复" },
     desc: {
       en: "Years of dynamic movement naturally lead to the gradual fragmentation of the bag's edge sealant. Rather than attempting an artificial \"reset,\" Ianne Atelier employs a calibrated manual intervention to alleviate the visual disruption of cracks and peeling. By layering subtle, high-fidelity finishes, we curb the aesthetic deviation caused by age, ensuring the piece retains its dignified character while remaining resilient for the journey ahead.",
-      zh: "边缘涂层的碎裂与剥落，是包身在长期动态使用下产生的物理应力痕迹。Ianne Atelier 拒绝生硬的"格式化"翻新，转而采用一种精密校准的手工干预，旨在淡化这些磨损带来的视觉干扰。通过细腻的层叠处理，我们有效收敛了因老化产生的质感差距，在尊重物件使用痕迹的同时，赋予其更稳固、含蓄的现代观感。"
+      zh: "边缘涂层的碎裂与剥落，是包身在长期动态使用下产生的物理应力痕迹。Ianne Atelier 拒绝生硬的\"格式化\"翻新，转而采用一种精密校准的手工干预，旨在淡化这些磨损带来的视觉干扰。通过细腻的层叠处理，我们有效收敛了因老化产生的质感差距，在尊重物件使用痕迹的同时，赋予其更稳固、含蓄的现代观感。"
     }
   },
 
@@ -230,7 +230,7 @@ const CASES = {
     title: { en: "LongChamp Colour Touch-Up", zh: "LongChamp 包包局部补色" },
     desc: {
       en: "Frequent handling and surface friction often lead to localized pigment erosion and lipid-induced darkening, particularly at high-stress corner areas. At Ianne Atelier, we address these visual irregularities through precision-calibrated colour integration. Rather than a heavy coating, our technique blends seamlessly with the leather's natural grain, effectively subduing the prominence of scuffs and stains. The result is a revitalized exterior where signs of previous wear become virtually imperceptible to the naked eye.",
-      zh: "频繁的触碰与物理磨擦，常导致皮革角位产生色素剥落与油脂淤积产生的暗沉。Ianne Atelier 拒绝生硬的覆盖，转而采用精密校准的色彩整合方案。通过对色调与光泽的微观调配，我们致力于收敛并淡化那些突兀的磨损点。这种干预让原本发黑、受损的纤维重新回归整体色序，使岁月留下的痕迹在视觉上趋于"隐形"，找回属于手袋的平衡美感。"
+      zh: "频繁的触碰与物理磨擦，常导致皮革角位产生色素剥落与油脂淤积产生的暗沉。Ianne Atelier 拒绝生硬的覆盖，转而采用精密校准的色彩整合方案。通过对色调与光泽的微观调配，我们致力于收敛并淡化那些突兀的磨损点。这种干预让原本发黑、受损的纤维重新回归整体色序，使岁月留下的痕迹在视觉上趋于\"隐形\"，找回属于手袋的平衡美感。"
     }
   },
 
