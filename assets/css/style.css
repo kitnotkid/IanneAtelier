@@ -85,6 +85,13 @@ header.scrolled {
 header.scrolled .brand { color: var(--charcoal); }
 .brand:hover { opacity: 0.65; }
 
+.header-cta {
+  color: var(--cream);
+  transition: color 0.5s ease, opacity 0.3s ease;
+}
+.header-cta:hover { opacity: 0.65; }
+header.scrolled .header-cta { color: var(--charcoal); }
+
 .header-actions { display: flex; align-items: center; gap: 20px; }
 .lang-switch { display: flex; gap: 2px; }
 
@@ -122,6 +129,13 @@ header.scrolled .lang-switch button:hover { color: var(--charcoal); }
 }
 
 header.scrolled .lang-switch button.active::after { background: var(--warm-stone); }
+
+/* Header on light-background pages (cases.html, case.html) */
+.light-page header:not(.scrolled) .brand             { color: var(--charcoal); }
+.light-page header:not(.scrolled) .header-cta        { color: var(--charcoal); }
+.light-page header:not(.scrolled) .lang-switch button        { color: rgba(44,40,37,0.4); }
+.light-page header:not(.scrolled) .lang-switch button.active { color: var(--charcoal); }
+.light-page header:not(.scrolled) .lang-switch button.active::after { background: var(--warm-stone); }
 
 /* ================================================
    HERO
