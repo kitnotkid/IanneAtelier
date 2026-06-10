@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <title>Cases – ianne atelier</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="light-page">
+
+<!-- ===== HEADER ===== -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Ianne Atelier</a>
+    <div class="header-actions">
+      <a href="https://ig.me/m/ianneatelierbagspa"
+         target="_blank"
+         class="header-cta"
+         aria-label="Contact via Instagram">
+        <svg class="cta-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <path fill="currentColor"
+            d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.75-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+        </svg>
+      </a>
+      <div class="lang-switch">
+        <button id="btn-en">EN</button>
+        <button id="btn-zh">中文</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<div class="cases-hero reveal">
+  <a href="cases.html" class="cases-back-link" id="cases-back">← All Services</a>
+  <p class="section-label">The Work</p>
+  <h1 class="cases-hero-title" id="cases-title"></h1>
+  <p class="cases-hero-sub" id="cases-count"></p>
+</div>
+
+<!-- ===== GRID ===== -->
+<div class="cases-grid-wrap">
+  <div class="case-grid" id="case-grid"></div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-brand">Ianne Atelier</p>
+    <p class="footer-note">Luxury Leather Restoration<br>Kelantan, Malaysia</p>
+  </div>
+</footer>
+
+<script src="./assets/js/cases.js"></script>
+<script src="./assets/js/animation.js"></script>
+
+<script>
+  const SERVICES_META = {
+    "Cleaning":         { en: "Cleaning",         zh: "清洗" },
+    "Colour Restore":   { en: "Colour Restore",    zh: "补色" },
+    "Colour Touch-up":  { en: "Colour Touch-up",   zh: "局部补色" },
+    "Edge Oil":         { en: "Edge Oil",          zh: "边油修复" },
+    "Strap Renewal":    { en: "Strap Renewal",     zh: "手提袋换新" },
+    "Repair & Restore": { en: "Repair & Restore",  zh: "修补修复" }
+  };
+
+  const params    = new URLSearchParams(window.location.search);
+  const serviceKey = params.get("service");
+
+  if (!serviceKey || !SERVICES_META[serviceKey]) {
+    window.location.replace("cases.html");
+  } else {
+    const grid = document.getElementById("case-grid");
+    let lang   = localStorage.getItem("lang") || "en";
+
+    const filteredIds = Object.keys(CASES).sort()
+      .filter(id => CASES[id].service.en === serviceKey);
+
+    function buildGrid() {
+      grid.innerHTML = "";
+
+      if (filteredIds.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "grid-empty";
+        empty.id = "grid-empty-msg";
+        empty.textContent = lang === "en"
+          ? "No cases found for this service yet."
+          : "暂无相关案例。";
+        grid.appendChild(empty);
+        return;
+      }
+
+      filteredIds.forEach((id, index) => {
+        const data       = CASES[id];
+        const coverImage = Array.isArray(data.images) ? data.images[0] : data.image;
+
+        const card = document.createElement("div");
+        card.className = "case-card reveal";
+        card.style.transitionDelay = `${(index % 6) * 0.07}s`;
+        card.onclick = () => { window.location.href = `case.html?id=${id}`; };
+
+        card.innerHTML = `
+          <div class="case-card-image">
+            <img src="${coverImage}" alt="${data.title.en}" loading="lazy">
+          </div>
+          <div class="case-info">
+            <p class="case-info-service">${data.service[lang]}</p>
+            <p class="case-info-brand">${data.brand || ""}</p>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+
+      document.querySelectorAll(".case-card.reveal").forEach(el => observeReveal(el));
+    }
+
+    function setLang(newLang) {
+      lang = newLang;
+      localStorage.setItem("lang", lang);
+
+      const meta = SERVICES_META[serviceKey];
+      document.title = `${meta[lang]} – ianne atelier`;
+      document.getElementById("cases-title").textContent = meta[lang];
+      document.getElementById("cases-count").textContent =
+        lang === "en" ? `${filteredIds.length} cases` : `${filteredIds.length} 个案例`;
+      document.getElementById("cases-back").textContent =
+        lang === "en" ? "← All Services" : "← 所有服务";
+
+      document.getElementById("btn-en").classList.toggle("active", lang === "en");
+      document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
+
+      document.querySelectorAll(".case-card").forEach((card, i) => {
+        const id = filteredIds[i];
+        if (id && CASES[id]) {
+          card.querySelector(".case-info-service").textContent = CASES[id].service[lang];
+        }
+      });
+
+      const emptyMsg = document.getElementById("grid-empty-msg");
+      if (emptyMsg) emptyMsg.textContent = lang === "en"
+        ? "No cases found for this service yet."
+        : "暂无相关案例。";
+    }
+
+    document.getElementById("btn-en").onclick = () => setLang("en");
+    document.getElementById("btn-zh").onclick = () => setLang("zh");
+
+    buildGrid();
+    setLang(lang);
+  }
+</script>
+
+<script>
+  const siteHeader = document.getElementById("site-header");
+  window.addEventListener("scroll", () => {
+    siteHeader.classList.toggle("scrolled", window.scrollY > 64);
+  }, { passive: true });
+</script>
+
+</body>
+</html>
