@@ -7,7 +7,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 
-  <title>Case – ianne atelier</title>
+  <title>Leather Restoration Case – Ianne Atelier</title>
+
+  <!-- SEO: title and description updated dynamically by JS -->
+  <meta name="description" content="View a completed leather restoration case by Ianne Atelier – luxury handbag cleaning, colour restore and repair in Kelantan, Malaysia.">
+  <link rel="canonical" href="https://ianneatelier.pages.dev/cases.html">
+   
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -107,6 +112,7 @@
     img.src = src;
     img.loading = "lazy";
     img.alt = `${caseData.title.en} – view ${i + 1}`;
+    document.title = `${caseData.title.en} – Ianne Atelier`;
     figure.appendChild(img);
     gallery.appendChild(figure);
   });
