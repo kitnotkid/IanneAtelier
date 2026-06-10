@@ -44,16 +44,20 @@ You are a senior web developer with 20 years of experience contracted to build a
 | `index.html` | Homepage — hero, services, process, testimonials |
 | `cases.html` | Case gallery — filterable grid built from `cases.js` |
 | `case.html` | Single case — reads `?id=` URL param to render from `CASES` |
+| `cases-grid.html` | Service-category landing — links into `cases.html`. Lets users pick a service filter first instead of loading all cases at once |
 
 ### Assets
 | Path | Role |
 |------|------|
 | `assets/css/style.css` | Single global stylesheet — all styles live here |
-| `assets/js/cases.js` | Single source of truth for all case data |
-| `assets/js/cases-filter.js` | Filter logic for `cases.html` — Phase 2 addition |
-| `assets/js/lightbox.js` | Lightbox overlay logic — Phase 2 addition |
+| `assets/js/cases.js` | Single source of truth for all case data (the `CASES` registry) |
 | `assets/js/animation.js` | IntersectionObserver reveal helper — do not bloat |
-| `assets/images/cases/` | All case images in WebP format |
+| `assets/images/cases/` | All case images (WebP), foldered by service → brand |
+| `assets/images/og-cover.webp` | Social share preview image (in prep — see Check List) |
+| `robots.txt` | Crawler rules — allows all, points to sitemap |
+| `sitemap.xml` | URL list for search engines |
+| `README.md` | Project readme |
+| `archive/` | Old/superseded versions — reference only, NOT served |
 
 ### Layer Responsibilities
 | Layer | Does |
@@ -183,3 +187,26 @@ Code snippets follow the table — one per action, clearly labelled.
 
 ### Check List
 - [ ] og-cover.webp prep
+
+## 6. SEO To-Do List
+
+> Status: og-cover.webp is in prep (see Check List). Items below are open.
+
+### Open Tasks
+| # | Task | File | Detail |
+|---|------|------|--------|
+| 1 | Fix canonical | `case.html` | Currently points to `cases.html`. Must point to the case's own URL (`case.html?id=000X`) so individual cases aren't dropped as duplicates. |
+| 2 | Make meta dynamic | `case.html` | JS sets `document.title` only. Also update `<meta name="description">` and inject OG tags per `?id=`. Solve together with Task 1. |
+| 3 | Add OG tags | `case.html` | No `og:title`/`og:description`/`og:image`/`og:url`. Sharing a case link shows no preview. |
+| 4 | Complete sitemap | `sitemap.xml` | Add `case.html`, `cases-grid.html`, and per-case `?id=` URLs. Add `<lastmod>`. |
+| 5 | Twitter Card tags | all pages | Add `twitter:card` + `twitter:image`. |
+| 6 | OG image metadata | index, cases | Add `og:image:width`/`height`/`og:image:alt`, `og:site_name`, `og:locale`. |
+| 7 | hreflang (optional/low) | all pages | Bilingual EN/中文 but `<html lang="en">` hardcoded, no hreflang. Low priority — content is JS-toggled on one URL. |
+| 8 | Add `cases-grid.html` to SEO set | `cases-grid.html` | Confirm it has title, description, canonical, OG. Add to sitemap (Task 4). |
+
+### Priority
+1. Tasks 1 + 2 (case indexing — do together)
+2. Task 4 (sitemap discoverability)
+3. Tasks 3, 5, 6 (social/share polish)
+4. Task 8 (verify new page)
+5. Task 7 (optional)
