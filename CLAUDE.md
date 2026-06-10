@@ -180,3 +180,6 @@ Code snippets follow the table — one per action, clearly labelled.
 - Caveman mode — straight to point
 - If answerable in 3 sentences, do not write a paragraph
 - Headers and bullets over walls of text
+
+### Check List
+- [ ] og-cover.webp prep
