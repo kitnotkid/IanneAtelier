@@ -9,9 +9,23 @@
 
   <title>Leather Restoration Case – Ianne Atelier</title>
 
-  <!-- SEO: title and description updated dynamically by JS -->
+    <!-- SEO: title, description, canonical and OG tags set per ?id= by JS below -->
   <meta name="description" content="View a completed leather restoration case by Ianne Atelier – luxury handbag cleaning, colour restore and repair in Kelantan, Malaysia.">
-  <link rel="canonical" href="https://ianneatelier.pages.dev/cases.html">
+  <link rel="canonical" href="https://ianneatelier.pages.dev/case.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Ianne Atelier">
+  <meta property="og:title" content="Leather Restoration Case – Ianne Atelier">
+  <meta property="og:description" content="View a completed leather restoration case by Ianne Atelier – luxury handbag cleaning, colour restore and repair in Kelantan, Malaysia.">
+  <meta property="og:url" content="https://ianneatelier.pages.dev/case.html">
+  <meta property="og:image" content="">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Leather Restoration Case – Ianne Atelier">
+  <meta name="twitter:description" content="View a completed leather restoration case by Ianne Atelier – luxury handbag cleaning, colour restore and repair in Kelantan, Malaysia.">
+  <meta name="twitter:image" content="">
    
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -92,11 +106,34 @@
   const params = new URLSearchParams(window.location.search);
   const caseId = params.get("id");
 
-  if (!caseId || !CASES[caseId]) {
+    if (!caseId || !CASES[caseId]) {
     window.location.replace("cases.html");
+    throw new Error(`Unknown case id: ${caseId}`); // stop script while redirect completes
   }
 
   const caseData = CASES[caseId];
+
+  // SEO: per-case head tags (canonical, description, OG, Twitter)
+  const pageUrl   = `${location.origin}${location.pathname}?id=${encodeURIComponent(caseId)}`;
+  const pageTitle = `${caseData.title.en} – Ianne Atelier`;
+  const pageDesc  = caseData.desc.en;
+  const coverImg  = Array.isArray(caseData.images) ? caseData.images[0] : caseData.image;
+
+  const setHead = (selector, attr, value) => {
+    const el = document.querySelector(selector);
+    if (el && value) el.setAttribute(attr, value);
+  };
+
+  document.title = pageTitle;
+  setHead('link[rel="canonical"]',            "href",    pageUrl);
+  setHead('meta[name="description"]',         "content", pageDesc);
+  setHead('meta[property="og:title"]',        "content", pageTitle);
+  setHead('meta[property="og:description"]',  "content", pageDesc);
+  setHead('meta[property="og:url"]',          "content", pageUrl);
+  setHead('meta[property="og:image"]',        "content", coverImg);
+  setHead('meta[name="twitter:title"]',       "content", pageTitle);
+  setHead('meta[name="twitter:description"]', "content", pageDesc);
+  setHead('meta[name="twitter:image"]',       "content", coverImg);
 
   // Render images
   const gallery = document.getElementById("image-gallery");
@@ -112,7 +149,6 @@
     img.src = src;
     img.loading = "lazy";
     img.alt = `${caseData.title.en} – view ${i + 1}`;
-    document.title = `${caseData.title.en} – Ianne Atelier`;
     figure.appendChild(img);
     gallery.appendChild(figure);
   });

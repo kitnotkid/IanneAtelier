@@ -188,25 +188,66 @@ Code snippets follow the table — one per action, clearly labelled.
 ### Check List
 - [ ] og-cover.webp prep
 
-## 6. SEO To-Do List
+## 6. SEO — Rules, To-Do, and SOP
 
-> Status: og-cover.webp is in prep (see Check List). Items below are open.
+> Goal: every individual case indexable by Google, every shared link shows a proper preview.
+> Status: og-cover.webp in prep. Tasks below are open unless marked done.
 
-### Open Tasks
+### 6.1 Standing SEO Rules (apply to ALL work, always)
+
+- Every HTML page must have, before merge: unique `<title>`, unique `<meta name="description">`
+  (≤155 chars, include "leather restoration" + location keyword), a **self-pointing** canonical,
+  OG tags (`og:title`, `og:description`, `og:image`, `og:url`, `og:type`), and Twitter Card tags
+  (`twitter:card`, `twitter:image`).
+- Canonical/OG/sitemap URLs are the ONLY sanctioned exception to the "relative paths only" rule —
+  crawlers require absolute URLs there. Use `https://ianneatelier.pages.dev/` as base. If the site
+  ever migrates, these are the only lines to update — keep them greppable.
+- Every page added or renamed must be added to `sitemap.xml` with `<lastmod>` in the same change.
+- All case/grid images must have meaningful `alt` text derived from the case title (image search
+  is a real traffic source for "LV bag cleaning before after" queries).
+- Phase 2 filter URLs (`cases.html?brand=LV`) must canonicalize to clean `cases.html` — design
+  this into `cases-filter.js` from the start, never retrofit.
+- Known limitation (accepted for Phase 2): JS-injected meta works for Google but NOT for
+  WhatsApp/Facebook preview crawlers (they don't run JS). True per-case share previews are a
+  Phase 3 Worker concern only — do not solve this with a build step or framework.
+
+### 6.2 Open Tasks (priority order)
+
 | # | Task | File | Detail |
 |---|------|------|--------|
-| 1 | Fix canonical | `case.html` | Currently points to `cases.html`. Must point to the case's own URL (`case.html?id=000X`) so individual cases aren't dropped as duplicates. |
-| 2 | Make meta dynamic | `case.html` | JS sets `document.title` only. Also update `<meta name="description">` and inject OG tags per `?id=`. Solve together with Task 1. |
-| 3 | Add OG tags | `case.html` | No `og:title`/`og:description`/`og:image`/`og:url`. Sharing a case link shows no preview. |
-| 4 | Complete sitemap | `sitemap.xml` | Add `case.html`, `cases-grid.html`, and per-case `?id=` URLs. Add `<lastmod>`. |
-| 5 | Twitter Card tags | all pages | Add `twitter:card` + `twitter:image`. |
-| 6 | OG image metadata | index, cases | Add `og:image:width`/`height`/`og:image:alt`, `og:site_name`, `og:locale`. |
-| 7 | hreflang (optional/low) | all pages | Bilingual EN/中文 but `<html lang="en">` hardcoded, no hreflang. Low priority — content is JS-toggled on one URL. |
-| 8 | Add `cases-grid.html` to SEO set | `cases-grid.html` | Confirm it has title, description, canonical, OG. Add to sitemap (Task 4). |
+| 1 | Self-canonical + dynamic meta per `?id=` | `case.html` | Canonical currently points to `cases.html` → all cases treated as duplicates. JS must set canonical to `case.html?id=000X`, plus `<meta description>`, OG title/desc/url from `CASES`, `og:image` from cover image (`images[0]` or `image`). Bilingual: use current language for title/desc. Do as ONE change. |
+| 2 | Complete sitemap | `sitemap.xml` | Add `cases-grid.html` + one `<url>` per case (`case.html?id=000X`). Add `<lastmod>` to all entries. |
+| 3 | `cases-grid.html` head | `cases-grid.html` | Has title only. Add description, canonical, OG per rules in 6.1. |
+| 4 | Twitter Card tags | all pages | `twitter:card` = `summary_large_image`, `twitter:image` = og image. |
+| 5 | OG image metadata | index, cases | `og:image:width`/`height`/`og:image:alt`, `og:site_name`, `og:locale`. Blocked on og-cover.webp. |
+| 6 | Image alt text | `cases.html`, `case.html` | Grid + case page images get `alt` from case title (current language). |
+| 7 | hreflang | all pages | Low priority — one URL, JS-toggled language. Skip unless asked. |
 
-### Priority
-1. Tasks 1 + 2 (case indexing — do together)
-2. Task 4 (sitemap discoverability)
-3. Tasks 3, 5, 6 (social/share polish)
-4. Task 8 (verify new page)
-5. Task 7 (optional)
+Execution order: 1 → 2 → 3 (indexing unblock), then 4 → 5 → 6 (share/search polish), 7 optional.
+
+### 6.3 SOP A — Adding a New Case
+
+1. Sheet entry → Colab validation → paste generated `"000X": { ... }` into `cases.js` (existing pipeline, unchanged).
+2. Verify `brand` and `service.en` strings EXACTLY match existing values — filtering and sitemap depend on it.
+3. Images: WebP, correct `service/brand` folder, `images[0]` is the cover (it becomes the case's `og:image`).
+4. Add to `sitemap.xml`: `<url>` for `case.html?id=000X` with today's `<lastmod>`.
+5. After deploy: open the live case URL — check it renders, title is correct, image loads.
+
+### 6.4 SOP B — Adding or Changing a Page
+
+1. Run the head checklist in 6.1 (title, description, canonical, OG, Twitter Card).
+2. Add/update the page in `sitemap.xml` with `<lastmod>`.
+3. Confirm no inline styles, no hard-coded hostnames outside canonical/OG.
+4. After deploy: validate the page with a share-preview debugger (e.g. opengraph.xyz) and view source to confirm meta.
+
+### 6.5 SOP C — Monthly Maintenance
+
+1. Update `<lastmod>` for any page changed that month.
+2. Google Search Console: confirm case URLs indexed, no duplicate-content warnings, no coverage errors.
+3. Check `robots.txt` and `sitemap.xml` still reachable on the live URL.
+
+### 6.6 Claude Behaviour for SEO Work
+
+- When asked to do SEO work, follow the priority order in 6.2 unless told otherwise.
+- Never mark a task done in this file without the user confirming it is deployed.
+- Any SEO change that requires a build step, framework, or backend is out of scope — flag it as a Phase 3 suggestion instead.
