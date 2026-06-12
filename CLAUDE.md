@@ -190,7 +190,7 @@ Code snippets follow the table — one per action, clearly labelled.
 
 ## 6. SEO To-Do List
 
-> Status: og-cover.webp is in prep (see Check List). Tasks 1–3 done for `case.html` (2026-06-11) — canonical, title, description, OG and Twitter tags now set per `?id=` by JS. Known limit: social scrapers (FB/WhatsApp/Twitter) don't run JS, so they see the static defaults, not per-case previews. True per-case previews need pre-generated HTML or a Worker — Phase 3, deferred.
+> Status (2026-06-12): Tasks 1–3 done for `case.html` — canonical, title, description, OG and Twitter tags set per `?id=` by JS. Task 4 done — sitemap rebuilt with all pages + 19 case URLs. GSC: ownership verified, sitemap submitted, status "Couldn't fetch" (normal post-submission placeholder) — recheck by 2026-06-14, expect "Success / 22 discovered". Known limit: social scrapers (FB/WhatsApp/Twitter) don't run JS, so case links share with static defaults, not per-case previews. True per-case previews need pre-generated HTML or a Worker — Phase 3, deferred.
 
 ### Done
 | # | Task | File | Note |
@@ -198,19 +198,37 @@ Code snippets follow the table — one per action, clearly labelled.
 | 1 | Fix canonical | `case.html` | JS sets canonical to `case.html?id=000X` via `location.origin` (host-agnostic). Static fallback in `<head>`. |
 | 2 | Dynamic meta | `case.html` | JS sets title, description, OG, Twitter tags per `?id=`. Also fixed: title-in-loop bug, script halt after invalid-id redirect. |
 | 3 | OG tags | `case.html` | Static defaults + per-case JS override. |
+| 4 | Complete sitemap | `sitemap.xml` | All pages + per-case URLs with `<lastmod>`. Submitted to GSC. Maintenance SOP below. |
 | 5 | Twitter Card | `case.html` only | Still open for index, cases, cases-grid. |
+
+### SOP — New Case → Sitemap (every time, no exceptions)
+When a new case is added to `cases.js`, `sitemap.xml` must be updated in the same commit:
+1. Copy the template below
+2. Change the case ID and date — ID in `<loc>` must EXACTLY match the key in `cases.js` (typo = case never indexed; bad URL silently redirects to `cases.html`)
+3. Paste directly ABOVE the closing `</urlset>` line
+4. Commit `cases.js` + `sitemap.xml` together
+5. Nothing to do in GSC — Google re-reads the sitemap automatically
+
+Template (indented = code block in markdown):
+
+      <url>
+        <loc>https://ianneatelier.pages.dev/case.html?id=00XX</loc>
+        <lastmod>YYYY-MM-DD</lastmod>
+        <priority>0.6</priority>
+        <changefreq>yearly</changefreq>
+      </url>
 
 ### Open Tasks
 | # | Task | File | Detail |
 |---|------|------|--------|
-| 4 | Complete sitemap | `sitemap.xml` | Add `case.html`, `cases-grid.html`, and per-case `?id=` URLs. Add `<lastmod>`. |
 | 5 | Twitter Card tags | index, cases, cases-grid | Add `twitter:card` + `twitter:image` to remaining pages. |
 | 6 | OG image metadata | index, cases | Add `og:image:width`/`height`/`og:image:alt`, `og:site_name`, `og:locale`. |
 | 7 | hreflang (optional/low) | all pages | Bilingual EN/中文 but `<html lang="en">` hardcoded, no hreflang. Low priority — content is JS-toggled on one URL. |
-| 8 | Add `cases-grid.html` to SEO set | `cases-grid.html` | Confirm it has title, description, canonical, OG. Add to sitemap (Task 4). |
+| 8 | Add `cases-grid.html` to SEO set | `cases-grid.html` | Confirm it has title, description, canonical, OG. Add to sitemap (done in Task 4 — verify head tags only). |
+| 9 | GSC follow-up | — | Confirm sitemap status flips to "Success / 22 discovered" by 2026-06-14. If still "Couldn't fetch", investigate Cloudflare bot settings. |
 
 ### Priority
-1. Task 4 (sitemap discoverability)
+1. Task 9 (verify GSC pickup — passive, just check)
 2. Tasks 5 + 6 (social/share polish on remaining pages)
-3. Task 8 (verify new page)
+3. Task 8 (verify cases-grid head tags)
 4. Task 7 (optional)
