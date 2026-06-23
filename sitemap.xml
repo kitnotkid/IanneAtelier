@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Core pages -->
   <url>
     <loc>https://ianneatelier.pages.dev/</loc>
     <lastmod>2026-06-11</lastmod>
@@ -20,8 +19,6 @@
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
-
-  <!-- Individual cases : one entry per case ID in cases.js -->
   <url>
     <loc>https://ianneatelier.pages.dev/case.html?id=0001</loc>
     <lastmod>2026-06-11</lastmod>
