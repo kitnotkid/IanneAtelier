@@ -27,7 +27,7 @@ Relative paths only, no hard-coded hostnames. Live: https://ianneatelier.pages.d
 | `assets/css/style.css` | ALL styles |
 | `assets/js/cases.js` | ALL case data (`CASES` registry) |
 | `assets/js/animation.js` | Reveal helper — do not bloat |
-| `assets/images/cases/` | WebP, foldered service → brand |
+| Cloudflare R2 (`pub-…r2.dev/cases/`) | WebP case images; absolute URLs stored in `cases.js` |
 | `robots.txt` / `sitemap.xml` | SEO |
 | `archive/` | Old versions — reference only, not served |
 
