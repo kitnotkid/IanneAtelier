@@ -19,6 +19,7 @@
     <div class="header-actions">
       <a href="https://ig.me/m/ianneatelierbagspa"
          target="_blank"
+         rel="noopener"
          class="header-cta"
          aria-label="Contact via Instagram">
         <svg class="cta-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
@@ -71,11 +72,11 @@
   const params    = new URLSearchParams(window.location.search);
   const serviceKey = params.get("service");
 
-  if (!serviceKey || !SERVICES_META[serviceKey]) {
+  if (!serviceKey || !Object.hasOwn(SERVICES_META, serviceKey)) {
     window.location.replace("cases.html");
   } else {
     const grid = document.getElementById("case-grid");
-    let lang   = localStorage.getItem("lang") || "en";
+    let lang = localStorage.getItem("lang") === "zh" ? "zh" : "en";
 
     const filteredIds = Object.keys(CASES).sort()
       .filter(id => CASES[id].service.en === serviceKey);

@@ -31,6 +31,7 @@
     <div class="header-actions">
       <a href="https://ig.me/m/ianneatelierbagspa"
          target="_blank"
+         rel="noopener"
          class="header-cta"
          aria-label="Contact via Instagram">
         <svg class="cta-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
@@ -79,7 +80,7 @@
     { key: "Repair & Restore", en: "Repair & Restore", zh: "修补修复" }
   ];
 
-  let lang = localStorage.getItem("lang") || "en";
+  let lang = localStorage.getItem("lang") === "zh" ? "zh" : "en";
 
   function buildServiceGrid() {
     const grid = document.getElementById("service-grid");

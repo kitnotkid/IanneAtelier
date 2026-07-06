@@ -19,7 +19,7 @@
   <meta property="og:title" content="Leather Restoration Case – Ianne Atelier">
   <meta property="og:description" content="View a completed leather restoration case by Ianne Atelier – luxury handbag cleaning, colour restore and repair in Kelantan, Malaysia.">
   <meta property="og:url" content="https://ianneatelier.pages.dev/case.html">
-  <meta property="og:image" content="">
+  <meta property="og:image"       content="https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0001_01.webp">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -40,6 +40,7 @@
 
       <a href="https://ig.me/m/ianneatelierbagspa"
          target="_blank"
+         rel="noopener"
          class="header-cta"
          aria-label="Contact via Instagram">
         <svg class="cta-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
@@ -84,7 +85,7 @@
 
   <!-- CTA -->
   <div class="case-page-cta reveal">
-    <a href="https://ig.me/m/ianneatelierbagspa" target="_blank" class="promise-cta" id="cta-text">
+    <a href="https://ig.me/m/ianneatelierbagspa" target="_blank" rel="noopener" class="promise-cta" id="cta-text">
       Request Assessment
     </a>
   </div>
@@ -106,7 +107,7 @@
   const params = new URLSearchParams(window.location.search);
   const caseId = params.get("id");
 
-    if (!caseId || !CASES[caseId]) {
+  if (!caseId || !Object.hasOwn(CASES, caseId)) {
     window.location.replace("cases.html");
     throw new Error(`Unknown case id: ${caseId}`); // stop script while redirect completes
   }
@@ -167,9 +168,9 @@
     document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
   }
 
-  document.getElementById("btn-en").onclick = () => setLang("en");
-  document.getElementById("btn-zh").onclick = () => setLang("zh");
-  setLang("en");
+  document.getElementById("btn-en").onclick = () => { localStorage.setItem("lang", "en"); setLang("en"); };
+  document.getElementById("btn-zh").onclick = () => { localStorage.setItem("lang", "zh"); setLang("zh"); };
+  setLang(localStorage.getItem("lang") === "zh" ? "zh" : "en");
 </script>
 
 <!-- ===== SCROLL + HEADER BEHAVIORS ===== -->

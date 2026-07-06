@@ -20,7 +20,7 @@
   <meta property="og:url"         content="https://ianneatelier.pages.dev/">
   <meta property="og:title"       content="Ianne Atelier | Luxury Leather Bag Restoration">
   <meta property="og:description" content="Expert leather cleaning, colour restoration and repair for luxury handbags in Kelantan, Malaysia.">
-  <meta property="og:image"       content="https://ianneatelier.pages.dev/assets/images/og-cover.webp">
+  <meta property="og:image"       content="https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0001_01.webp">
 
   <!-- JSON-LD: Local Business -->
   <script type="application/ld+json">
@@ -52,6 +52,7 @@
     <div class="header-actions">
       <a href="https://ig.me/m/ianneatelierbagspa"
         target="_blank"
+        rel="noopener"
         class="header-cta"
         aria-label="Contact via Instagram">
         <svg class="cta-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
@@ -344,9 +345,9 @@
     buildTestimonials(lang);
   }
 
-  document.getElementById("btn-en")?.addEventListener("click", () => setLang("en"));
-  document.getElementById("btn-zh")?.addEventListener("click", () => setLang("zh"));
-  setLang("en");
+  document.getElementById("btn-en")?.addEventListener("click", () => { localStorage.setItem("lang", "en"); setLang("en"); });
+  document.getElementById("btn-zh")?.addEventListener("click", () => { localStorage.setItem("lang", "zh"); setLang("zh"); });
+  setLang(localStorage.getItem("lang") === "zh" ? "zh" : "en");
 </script>
 
 <!-- ===== SCROLL BEHAVIORS ===== -->
