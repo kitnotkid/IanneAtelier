@@ -307,7 +307,19 @@ const CASES = {
       en: "A worn zipper is often the first component to surrender — teeth misalign, the slider loses grip, and the daily ritual of opening and closing turns into friction. Ianne Atelier replaces the failing track entirely, fitting a new zipper matched in gauge and hardware tone, then re-stitching along the original seam lines to preserve the bag's structure. The intent is simple: return the closure to the smooth, reliable glide it was built to deliver, so the bag can quietly resume its duty without hesitation at every open and close.",
       zh: "拉链往往是包包最先失守的部件——链齿错位、拉头松脱，每一次开合都变得迟滞卡顿。Ianne Atelier 将整条失效的拉链拆除更换，选用规格与五金色调相匹配的新链，并沿原有车线重新缝合，保留包身原本的结构。我们的目标很直接：让开合恢复应有的顺滑与可靠，使包包重新胜任日常的每一次取放，不再有迟疑。"
     }
-  }
+  },
 
+  "0022": {
+    brand: "Others",
+    service: { en: "Repair & Restore", zh: "修补修复" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0021_01.webp"
+    ],
+    title: { en: "Repair & Restore", zh: "修补修复" },
+    desc: {
+      en: "A worn zipper is often the first component to surrender — teeth misalign, the slider loses grip, and the daily ritual of opening and closing turns into friction. Ianne Atelier replaces the failing track entirely, fitting a new zipper matched in gauge and hardware tone, then re-stitching along the original seam lines to preserve the bag's structure. The intent is simple: return the closure to the smooth, reliable glide it was built to deliver, so the bag can quietly resume its duty without hesitation at every open and close.",
+      zh: "拉链往往是包包最先失守的部件——链齿错位、拉头松脱，每一次开合都变得迟滞卡顿。Ianne Atelier 将整条失效的拉链拆除更换，选用规格与五金色调相匹配的新链，并沿原有车线重新缝合，保留包身原本的结构。我们的目标很直接：让开合恢复应有的顺滑与可靠，使包包重新胜任日常的每一次取放，不再有迟疑。"
+    }
+  }
 
 };
