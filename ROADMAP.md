@@ -1,8 +1,16 @@
 # ROADMAP — decisions locked 2026-07-07
 
 ## Step 1 — Custom domain (THIS WEEK)
-- Buy `ianneatelier.com` at Namecheap.
-- Point nameservers to Cloudflare (Namecheap → Custom DNS). No domain transfer needed.
+- Buy `ianneatelier.com`. Preferred: Cloudflare Registrar (at-cost, DNS already
+  in the right place, zero extra setup). Namecheap equally fine — then point
+  nameservers to Cloudflare (Namecheap → Custom DNS). No domain transfer needed.
+- NOTE: apex domain REQUIRES the zone on Cloudflare DNS (Pages restriction) —
+  CNAME-only at an external DNS host works for www only. Nameserver route
+  sidesteps this entirely.
+- Register under the business-controlled account (kjchong Gmail), never an
+  employee's personal account. Registrar/Cloudflare login stays on Gmail —
+  NEVER on an @ianneatelier.com address (domain breaks = locked out of the
+  account needed to fix it).
 - Cloudflare Pages → Custom domains → add apex + www. `pages.dev` stays live = rollback.
 - One commit: replace `pages.dev` hostname in `sitemap.xml` (21 URLs), `case.html`
   canonical/OG JS, `robots.txt`, README/CLAUDE.md. Grep `pages.dev` for stragglers.
@@ -35,3 +43,24 @@
 ## Step 6 — Runbook (APPROVED)
 - Add `PUBLISH.md`: Sheet link, Colab link, 5-step publish SOP incl. sitemap,
   recovery = revert. Start writing `HANDOFF.md` at session end per CLAUDE.md.
+
+## Step 7 — Business email (DECIDED, after Step 1)
+- Cloudflare Email Routing (free, receive-only): `hello@ianneatelier.com`
+  → forwards to kjchong Gmail. Setup in Cloudflare dashboard, few clicks.
+- Partner copy (DECIDED: Gmail auto-forward): in kjchong Gmail, Settings →
+  Forwarding → add partner address, filter `to:hello@ianneatelier.com` → forward.
+  Reversible in one click.
+- Upgrade path if needed later: Email Worker fan-out (account-level, no site
+  code) or Zoho/Google Workspace for real shared mailboxes. Not now.
+- Sending AS hello@ (Gmail "send mail as" + SMTP relay): optional, later.
+
+## Model guide per step
+| Step | Model |
+|---|---|
+| 1 | Sonnet 5 |
+| 2 | Sonnet 5 |
+| 3 (design) | Opus 4.8 / Fable 5, then Sonnet 5 to execute |
+| 4 | Haiku 4.5 (snippets) |
+| 5 | Sonnet 5 |
+| 6 | Haiku 4.5 |
+| Plan reviews | Fable 5 / Opus 4.8 |
