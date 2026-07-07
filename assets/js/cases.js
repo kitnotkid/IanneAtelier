@@ -278,6 +278,21 @@ const CASES = {
       en: "Daily wear often results in a dual challenge: the progressive yellowing of rubber midsoles and the accumulation of environmental particulates within the suede nap. Ianne Atelier addresses these issues through a specialized dual-action process. We focus on brightening oxidized soles while utilizing pH-balanced agents to lift the \"haze\" from the upper, effectively softening the hardened texture. This treatment reduces the visual fatigue of the shoe, allowing the original tones to emerge with renewed clarity and suppleness.",
       zh: "运动鞋的日常损耗往往表现为两方面：橡胶中底的自然氧化发黄，以及麂皮纤维因吸附灰尘而导致的色彩暗沉。Ianne Atelier 采用针对性的双重护理方案。通过去黄增白工艺改善鞋底的视觉陈旧感，并配合温和的乳化技术剥离深层污垢，驱散鞋面的灰蒙感。我们的目标是在不损伤结构的前提下，重新找回色彩的明亮度并唤醒纤维的柔软触感，让陪伴您的鞋履重现利落、洁净的质感"
     }
-  }
+  },
 
+  "0020": {
+    brand: "Others",
+    service: { en: "Colour Touch-up", zh: "局部补色" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0020_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0020_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0020_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0020_04.webp"
+    ],
+    title: { en: "Colour Touch-up", zh: "局部补色" },
+    desc: {
+      en: "Prolonged use gradually strips black leather of its density — surface fibres lighten into a grey haze, while fine scratches and dust build-up dull the once-uniform finish. Ianne Atelier addresses this through methodical colour saturation, deep-cleansing the embedded residue before re-layering pigment to reduce the visual gap left by wear. The intent is not to recreate a factory finish, but to bring the faded areas back into tonal agreement with the rest of the bag — a composed, evenly saturated black that carries its history with quiet dignity.",
+      zh: "黑色皮革在长期使用后，色彩密度会逐渐流失——表层纤维泛灰起雾，细微刮痕与积尘让原本统一的色泽变得斑驳黯淡。Ianne Atelier 先深层清理嵌入纤维的污垢，再以层叠补色收窄磨损留下的视觉落差。我们并非要还原出厂状态，而是让褪色的部位重新融入包身的整体色序，呈现沉稳、均匀的黑色质感——岁月的痕迹依然存在，只是不再喧宾夺主。"
+    }
+  }
 };
