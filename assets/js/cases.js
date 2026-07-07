@@ -294,5 +294,20 @@ const CASES = {
       en: "Prolonged use gradually strips black leather of its density — surface fibres lighten into a grey haze, while fine scratches and dust build-up dull the once-uniform finish. Ianne Atelier addresses this through methodical colour saturation, deep-cleansing the embedded residue before re-layering pigment to reduce the visual gap left by wear. The intent is not to recreate a factory finish, but to bring the faded areas back into tonal agreement with the rest of the bag — a composed, evenly saturated black that carries its history with quiet dignity.",
       zh: "黑色皮革在长期使用后，色彩密度会逐渐流失——表层纤维泛灰起雾，细微刮痕与积尘让原本统一的色泽变得斑驳黯淡。Ianne Atelier 先深层清理嵌入纤维的污垢，再以层叠补色收窄磨损留下的视觉落差。我们并非要还原出厂状态，而是让褪色的部位重新融入包身的整体色序，呈现沉稳、均匀的黑色质感——岁月的痕迹依然存在，只是不再喧宾夺主。"
     }
+  },
+
+  "0021": {
+    brand: "Others",
+    service: { en: "Repair & Restore", zh: "修补修复" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0021_01.webp"
+    ],
+    title: { en: "Repair & Restore", zh: "修补修复" },
+    desc: {
+      en: "A worn zipper is often the first component to surrender — teeth misalign, the slider loses grip, and the daily ritual of opening and closing turns into friction. Ianne Atelier replaces the failing track entirely, fitting a new zipper matched in gauge and hardware tone, then re-stitching along the original seam lines to preserve the bag's structure. The intent is simple: return the closure to the smooth, reliable glide it was built to deliver, so the bag can quietly resume its duty without hesitation at every open and close.",
+      zh: "拉链往往是包包最先失守的部件——链齿错位、拉头松脱，每一次开合都变得迟滞卡顿。Ianne Atelier 将整条失效的拉链拆除更换，选用规格与五金色调相匹配的新链，并沿原有车线重新缝合，保留包身原本的结构。我们的目标很直接：让开合恢复应有的顺滑与可靠，使包包重新胜任日常的每一次取放，不再有迟疑。"
+    }
   }
+
+
 };
