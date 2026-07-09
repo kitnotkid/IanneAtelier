@@ -264,7 +264,7 @@ const CASES = {
 
   "0019": {
     brand: "New Balance",
-    service: { en: "Cleaning", zh: "清洗" },
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
     images: [
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0019_00.webp",
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0019_01.webp",
