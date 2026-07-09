@@ -356,6 +356,5 @@ const CASES = {
       en: "Daily wear and environmental exposure have caused significant yellowing and particulate accumulation across the leather surfaces and soles of these sneakers. At Ianne Atelier, we employed a precision-calibrated cleaning process to carefully lift embedded stains and address the widespread discoloration. While this service is not about erasing the past or achieving a factory-new state, it effectively revitalizes the material's brightness and restores a cleaner, more uniform appearance. The sneakers now carry their history with quiet dignity, ready for the adventures that lie ahead.",
       zh: "频繁的穿着与日常环境的侵蚀，导致这双运动鞋的皮革表面及鞋底出现了明显的泛黄与污渍沉淀。Ianne Atelier 采用精细校准的清洁技法，深层剥离纤维间的尘垢，从而有效缓解了材质的暗沉与色泽不均。此项服务并非要完全抹去使用的印记或试图还原出厂状态，而是致力于唤醒材质的洁净感，让岁月累积的痕迹自然收敛。经过专业的养护，这双鞋履将以更加清爽的姿态，陪您走过更长的旅途。"
     }
-
-
+  }
 };
