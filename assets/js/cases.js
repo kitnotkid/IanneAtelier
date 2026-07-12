@@ -264,7 +264,7 @@ const CASES = {
 
   "0019": {
     brand: "New Balance",
-    service: { en: "Cleaning", zh: "清洗" },
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
     images: [
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0019_00.webp",
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0019_01.webp",
@@ -310,16 +310,51 @@ const CASES = {
   },
 
   "0022": {
-    brand: "Others",
-    service: { en: "Repair & Restore", zh: "修补修复" },
+    brand: "Viv' Run by Roger Vivier",
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
     images: [
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0021_01.webp"
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0022_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_01.webp"
     ],
-    title: { en: "Repair & Restore", zh: "修补修复" },
+    title: { en: "Shoe Cleaning", zh: "鞋子清洗" },
     desc: {
-      en: "A worn zipper is often the first component to surrender — teeth misalign, the slider loses grip, and the daily ritual of opening and closing turns into friction. Ianne Atelier replaces the failing track entirely, fitting a new zipper matched in gauge and hardware tone, then re-stitching along the original seam lines to preserve the bag's structure. The intent is simple: return the closure to the smooth, reliable glide it was built to deliver, so the bag can quietly resume its duty without hesitation at every open and close.",
-      zh: "拉链往往是包包最先失守的部件——链齿错位、拉头松脱，每一次开合都变得迟滞卡顿。Ianne Atelier 将整条失效的拉链拆除更换，选用规格与五金色调相匹配的新链，并沿原有车线重新缝合，保留包身原本的结构。我们的目标很直接：让开合恢复应有的顺滑与可靠，使包包重新胜任日常的每一次取放，不再有迟疑。"
+      en: "Environmental exposure and regular use have led to noticeable yellowing and particulate accumulation within the intricate mesh fabric of these shoes. At Ianne Atelier, we utilized a gentle, precision-calibrated cleaning extraction to lift embedded dirt without compromising the delicate structural integrity or embellishments. While this process is not about erasing the past or achieving a factory-new state, it effectively revitalizes the fabric's brightness and subdues overall discoloration. The footwear now carries its history with quiet dignity, prepared for the journeys ahead.",
+      zh: "日常的穿着与环境接触，使鞋面精细的网眼织物中积聚了明显的灰尘与泛黄痕迹。Ianne Atelier 采用温和的深层提取技术，在不损伤脆弱网面与水钻饰件的前提下，安全地剥离纤维深处的污垢。这次深层清洁并非要还原出厂状态，而是致力于最大程度地唤醒材质的明亮度，让岁月累积的暗沉自然收敛。褪去疲惫的痕迹后，这双鞋履将以更加优雅从容的姿态，陪您走过更长的旅途。"
+    }
+  },
+
+  "0024": {
+    brand: "Chanel",
+    service: { en: "Colour Touch-up", zh: "局部补色" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_04.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_05.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_06.webp"
+    ],
+    title: { en: "Colour Touch-up", zh: "局部补色" },
+    desc: {
+      en: "Continuous friction and daily handling have caused localized pigment erosion, scuffing, and visible discoloration along the delicate piping and quilted surfaces of this Chanel piece. At Ianne Atelier, we addressed these visual irregularities through a precision-calibrated colour touch-up, meticulously blending the pigment to match the surrounding leather. While this delicate surface treatment is not about erasing the past or achieving a factory-new state, it effectively subdues the prominence of wear and reinstates overall tonal consistency. The handbag now carries its history with quiet dignity, elegantly prepared for its continued journey.",
+      zh: "频繁的日常使用与边缘摩擦，使得这只 Chanel 手袋的绲边及绗缝表面出现了局部色素剥落与明显的泛黄暗沉。Ianne Atelier 采用层叠补色技法，以精准调配的色彩细致修饰受损区域，使其与原有皮面自然融合。此项服务并非要生硬地还原出厂状态，而是旨在最大程度地淡化磨损痕迹，收敛视觉上的色差与突兀感。经过温和的修护，这只包袋带着岁月留下的温柔底蕴，继续陪您优雅前行。"    }
+  },
+
+  "0025": {
+    brand: "Nike",
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0025_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0025_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0025_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0025_04.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0025_05.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0025_06.webp"
+    ],
+    title: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    desc: {
+      en: "Daily wear and environmental exposure have caused significant yellowing and particulate accumulation across the leather surfaces and soles of these sneakers. At Ianne Atelier, we employed a precision-calibrated cleaning process to carefully lift embedded stains and address the widespread discoloration. While this service is not about erasing the past or achieving a factory-new state, it effectively revitalizes the material's brightness and restores a cleaner, more uniform appearance. The sneakers now carry their history with quiet dignity, ready for the adventures that lie ahead.",
+      zh: "频繁的穿着与日常环境的侵蚀，导致这双运动鞋的皮革表面及鞋底出现了明显的泛黄与污渍沉淀。Ianne Atelier 采用精细校准的清洁技法，深层剥离纤维间的尘垢，从而有效缓解了材质的暗沉与色泽不均。此项服务并非要完全抹去使用的印记或试图还原出厂状态，而是致力于唤醒材质的洁净感，让岁月累积的痕迹自然收敛。经过专业的养护，这双鞋履将以更加清爽的姿态，陪您走过更长的旅途。"
     }
   }
-
 };
