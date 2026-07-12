@@ -314,13 +314,30 @@ const CASES = {
     service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
     images: [
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0022_01.webp",
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_01.webp"
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0022_02.webp"
     ],
     title: { en: "Shoe Cleaning", zh: "鞋子清洗" },
     desc: {
       en: "Environmental exposure and regular use have led to noticeable yellowing and particulate accumulation within the intricate mesh fabric of these shoes. At Ianne Atelier, we utilized a gentle, precision-calibrated cleaning extraction to lift embedded dirt without compromising the delicate structural integrity or embellishments. While this process is not about erasing the past or achieving a factory-new state, it effectively revitalizes the fabric's brightness and subdues overall discoloration. The footwear now carries its history with quiet dignity, prepared for the journeys ahead.",
       zh: "日常的穿着与环境接触，使鞋面精细的网眼织物中积聚了明显的灰尘与泛黄痕迹。Ianne Atelier 采用温和的深层提取技术，在不损伤脆弱网面与水钻饰件的前提下，安全地剥离纤维深处的污垢。这次深层清洁并非要还原出厂状态，而是致力于最大程度地唤醒材质的明亮度，让岁月累积的暗沉自然收敛。褪去疲惫的痕迹后，这双鞋履将以更加优雅从容的姿态，陪您走过更长的旅途。"
     }
+  },
+
+  "0023": {
+    brand: "Chanel",
+    service: { en: "Colour Touch-up", zh: "局部补色" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_04.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_05.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_06.webp"
+    ],
+    title: { en: "Colour Touch-up", zh: "局部补色" },
+    desc: {
+      en: "Continuous friction and daily handling have caused localized pigment erosion, scuffing, and visible discoloration along the delicate piping and quilted surfaces of this Chanel piece. At Ianne Atelier, we addressed these visual irregularities through a precision-calibrated colour touch-up, meticulously blending the pigment to match the surrounding leather. While this delicate surface treatment is not about erasing the past or achieving a factory-new state, it effectively subdues the prominence of wear and reinstates overall tonal consistency. The handbag now carries its history with quiet dignity, elegantly prepared for its continued journey.",
+      zh: "频繁的日常使用与边缘摩擦，使得这只 Chanel 手袋的绲边及绗缝表面出现了局部色素剥落与明显的泛黄暗沉。Ianne Atelier 采用层叠补色技法，以精准调配的色彩细致修饰受损区域，使其与原有皮面自然融合。此项服务并非要生硬地还原出厂状态，而是旨在最大程度地淡化磨损痕迹，收敛视觉上的色差与突兀感。经过温和的修护，这只包袋带着岁月留下的温柔底蕴，继续陪您优雅前行。"    }
   },
 
   "0024": {
