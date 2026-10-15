@@ -1,6 +1,6 @@
 ```markdown
 # IANNE ATELIER — Project README
-**Live:** https://ianneatelier.pages.dev/
+**Live:** https://ianneatelier.com/
 Ianne Atelier is a static landing page for a luxury leather restoration studio. The site's primary job is to answer the question every potential customer asks before making contact:
 > "Has Ianne Atelier handled a case like mine before?"
 The case gallery — and the filtering system built on top of it — is the direct answer to that question.
