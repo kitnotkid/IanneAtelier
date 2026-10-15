@@ -96,9 +96,7 @@
 
   <!-- CTA -->
   <div class="case-page-cta reveal">
-    <a href="https://ig.me/m/ianneatelierbagspa" target="_blank" rel="noopener" class="promise-cta" id="cta-text">
-      Request Assessment
-    </a>
+    <a href="https://wa.me/60169391818" target="_blank" rel="noopener" class="promise-cta" id="cta-text">
   </div>
 
 </div>
@@ -165,6 +163,8 @@
     gallery.appendChild(figure);
   });
 
+  const WHATSAPP_BASE_URL = document.getElementById("cta-text").getAttribute("href");
+
   function setLang(lang) {
     document.getElementById("title").textContent         = caseData.title[lang];
     document.getElementById("desc").textContent          = caseData.desc[lang];
@@ -174,6 +174,13 @@
     brandEl.hidden = !caseData.brand;
     document.getElementById("cta-text").textContent      = lang === "en" ? "Request Assessment" : "获取免费评估";
     document.getElementById("back-label").textContent    = lang === "en" ? "All Cases" : "所有案例";
+
+    // Pre-fill case ID so the client doesn't have to describe which case they saw
+    let whatsappMessage = `Hi Ianne Atelier, I'd like an assessment. I saw case ${caseId} (${caseData.title.en}).`;
+    if (lang === "zh") {
+      whatsappMessage = `你好 Ianne Atelier，我想咨询修复评估。我看到了案例 ${caseId}（${caseData.title.zh}）。`;
+    }
+    document.getElementById("cta-text").href = `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(whatsappMessage)}`;
 
     document.getElementById("btn-en").classList.toggle("active", lang === "en");
     document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
