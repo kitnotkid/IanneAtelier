@@ -16,7 +16,7 @@ Filtering system = primary answer tool. Measure every Phase 2 decision against t
 
 ## Infrastructure
 Pure static. No framework, no build, no backend. Host: Cloudflare Pages.
-Relative paths only, no hard-coded hostnames. Live: https://ianneatelier.pages.dev/
+Relative paths only, no hard-coded hostnames. Live: https://ianneatelier.com/
 
 | File | Role |
 |---|---|
