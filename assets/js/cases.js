@@ -375,6 +375,7 @@ const CASES = {
       zh: "频繁的穿着与日常环境的侵蚀，导致这双运动鞋的皮革表面及鞋底出现了明显的泛黄与污渍沉淀。Ianne Atelier 采用精细校准的清洁技法，深层剥离纤维间的尘垢，从而有效缓解了材质的暗沉与色泽不均。此项服务并非要完全抹去使用的印记或试图还原出厂状态，而是致力于唤醒材质的洁净感，让岁月累积的痕迹自然收敛。经过专业的养护，这双鞋履将以更加清爽的姿态，陪您走过更长的旅途。"
     }
   },
+
   "0026": {
     brand: "New Balance",
     service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
@@ -386,11 +387,12 @@ const CASES = {
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0026_05.webp"
     ],
     title: { en: "New Balance 991 Suede Sneaker Cleaning", zh: "New Balance 991 麂皮运动鞋清洗" },
-        desc: {
+    desc: {
       en: "Daily wear has settled fine dust into the suede nap of this New Balance 991, with grey speckling and grime gathering along the midsole and outsole edge. Ianne Atelier lifted the embedded particulates with a pH-balanced suede cleanse and soft-bristle work, keeping the nap soft and full. The midsole retains its warm, age-earned cream tone — this is not about an out-of-box finish, but a cleaner, more even pair. It carries its character forward, ready for the miles ahead.",
       zh: "日常穿着让细尘沉入这双 New Balance 991 的麂皮绒面，中底与鞋底边缘也积聚了灰点与污垢。Ianne Atelier 以 pH 平衡的麂皮清洁配合软毛细刷，温和剥离纤维深处的尘垢，保留绒面的蓬松质感。中底随岁月沉淀的暖米色会自然保留——我们并非要还原出厂状态，而是让整双鞋重回洁净、均匀。经过护理，它将继续陪伴您丈量未来的每一段路途。"
     }
   },
+
    "0027": {
     brand: "Adidas",
     service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
@@ -406,6 +408,7 @@ const CASES = {
       zh: "日常穿着让这双 Adidas Superstar 的橡胶鞋边积满灰黑污垢，鞋带黯淡，米色皮面也蒙上一层细尘。Ianne Atelier 以温和的皮面清洁配合鞋边针对性刷洗，剥离嵌入纹理的污渍，同时保留皮面原有光泽。鞋面的自然折痕会如实保留——我们并非要还原出厂状态，而是让整体重回洁净明亮。这双 Superstar 以更清爽的姿态，继续伴您踏出每一步。"
     }
   },
+
   "0028": {
     brand: "Nike",
     service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
@@ -421,6 +424,7 @@ const CASES = {
       zh: "日常穿着让这双 Air Jordan 1 Low 的白色中底蒙上一层灰垢与黑点，尘埃更沉积在鞋边的纹理之间。Ianne Atelier 以鞋边针对性刷洗配合温和的皮面清洁，剥离深层污渍，同时保留鞋面原有的质感。我们并非要还原出厂状态，而是让灰、黑、红三色的层次重新分明。这双鞋以利落、清爽的姿态，准备迎接下一段旅程。"
     }
   },
+
     "0029": {
     brand: "Puma",
     service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
@@ -437,6 +441,7 @@ const CASES = {
       zh: "日常穿着让这双 Puma Cali Dream 的白色皮面泛起灰调，阶梯式厚底与鞋头处更积聚了明显的污垢。Ianne Atelier 以细致刷洗处理层叠的鞋边纹路，并以温和的皮面清洁剥离深层尘垢，同时保留皮革原有的纹理。我们并非要还原出厂状态——鞋底会保留柔和的米白色调——而是让白色鞋身与黑色 Formstrip 的对比重新清晰。这双鞋以洁净、从容的姿态，再次出发。"
     }
   },
+
     "0030": {
     brand: "Skechers",
     service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
@@ -448,12 +453,14 @@ const CASES = {
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0030_05.webp",
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0030_06.webp"
     ],
+
     title: { en: "Skechers Chunky Sneaker Cleaning", zh: "Skechers 老爹鞋清洗" },
     desc: {
       en: "Daily wear has left a grey film across the sculpted white midsole of this Skechers chunky sneaker, with dust settling into its deep contours and mesh panels. Ianne Atelier worked through each curve of the sole with detailed brushing and lifted embedded dirt from the mesh using a gentle cleanse, preserving the vivid red, blue and yellow accents. This is not about a factory-new pair, but a cleaner base that lets every colour stand out again. The pair returns bright and ready for the next adventure.",
       zh: "日常穿着让这双 Skechers 老爹鞋的白色立体中底蒙上一层灰膜，尘垢更沉积在弧形纹路与网面之间。Ianne Atelier 以细致刷洗逐一处理鞋底的每道曲线，并以温和清洁剥离网布深处的污渍，保留红、蓝、黄配色的鲜明层次。我们并非要还原出厂状态，而是让洁净的白色底座重新衬托出每一抹色彩。这双鞋以明亮、轻快的姿态，再次陪您出行。"
     }
   },
+
     "0031": {
     brand: "LV",
     service: { en: "Repair & Restore", zh: "修补修复" },
@@ -469,6 +476,7 @@ const CASES = {
       zh: "多年的使用让这只 LV Neverfull 的植鞣革变成深沉不均的焦糖色，包口滚边出现裂痕，提手磨损，侧边抽绳也已缺失。Ianne Atelier 为其更换整套天然植鞣革——包口滚边、提手、皮扣与侧边抽绳，并依循原有结构细致缝制。我们并非要还原出厂状态：老花帆布保留着岁月的印记，而新换的植鞣革也将在阳光与日常使用中，慢慢氧化成温润的蜜糖色。这只 Neverfull 重新变得完整、稳固，开始书写属于它的新一段岁月。"
     }
   },
+  
     "0032": {
     brand: "LV",
     service: { en: "Colour Touch-up", zh: "局部补色" },
