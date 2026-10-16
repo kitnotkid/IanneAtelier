@@ -85,10 +85,10 @@ const CASES = {
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0006_03.webp",
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0006_04.webp"
     ],
-    title: { en: "Braun Buffel Bag Colour Restore", zh: "Braun Buffel 包包补色" },
+    title: { en: "Braun Buffel Bag Colour Touch-up", zh: "Braun Buffel 包包局部补色" },
     desc: {
-      en: "Original colour had faded unevenly due to wear and exposure. The surface was carefully cleaned and colour-corrected to restore depth and consistency while preserving the original leather texture.",
-      zh: "因日常使用与环境影响，包身颜色出现不均匀褪色。经过细致清洁与补色处理，在保留原有皮质纹理的前提下，恢复整体色泽与层次。"
+      en: "Everyday friction had left pale scuffs across the black leather of this Braun Buffel bag, most visible beside the embossed logo and along the base corners, where abrasion had worn through to lighter fibres. Ianne Atelier blended a matched black pigment into each worn area in thin layers, keeping the leather's natural grain and the crispness of the logo intact. This is not about erasing every mark, but softening the wear until the surface reads as one even tone. The bag returns poised and understated, ready for daily duty.",
+      zh: "日常摩擦让这只 Braun Buffel 包的黑色皮面留下浅白擦痕，尤以压印标志旁与底部包角最为明显，磨损处已露出较浅的皮层纤维。Ianne Atelier 以调配相符的黑色色料，薄层多次融入每一处磨损，同时保留皮革天然的纹理与标志压印的清晰轮廓。我们并非要抹去每一道痕迹，而是淡化磨损，让整体皮面重新归于均匀一致。这只包以沉稳、内敛的姿态，继续陪伴您的日常。"
     }
   },
 
@@ -352,9 +352,10 @@ const CASES = {
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_06.webp"
     ],
     title: { en: "Chanel La Pausa Runway Lifesaver Ring Bag Colour Touch-up", zh: "Chanel La Pausa Runway Lifesaver Ring Bag 局部补色" },
-    desc: {
-      en: "Continuous friction and daily handling have caused localized pigment erosion, scuffing, and visible discoloration along the delicate piping and quilted surfaces of this Chanel piece. At Ianne Atelier, we addressed these visual irregularities through a precision-calibrated colour touch-up, meticulously blending the pigment to match the surrounding leather. While this delicate surface treatment is not about erasing the past or achieving a factory-new state, it effectively subdues the prominence of wear and reinstates overall tonal consistency. The handbag now carries its history with quiet dignity, elegantly prepared for its continued journey.",
-      zh: "频繁的日常使用与边缘摩擦，使得这只 Chanel 手袋的绲边及绗缝表面出现了局部色素剥落与明显的泛黄暗沉。Ianne Atelier 采用层叠补色技法，以精准调配的色彩细致修饰受损区域，使其与原有皮面自然融合。此项服务并非要生硬地还原出厂状态，而是旨在最大程度地淡化磨损痕迹，收敛视觉上的色差与突兀感。经过温和的修护，这只包袋带着岁月留下的温柔底蕴，继续陪您优雅前行。"    }
+        desc: {
+      en: "The ivory calfskin of this Chanel lifesaver ring bag had gathered grey scuffs, dark specks and grime along its curved panels, with soiling settling into the seam lines and around the chain eyelets. Ianne Atelier cleansed each surface before layering a precisely matched ivory tone, working carefully around the embroidered lettering and hardware. This is not about erasing every trace of wear, but softening the marks so the pale leather reads clean and even again. The ring bag returns light and luminous, ready for its next outing.",
+      zh: "这只 Chanel 救生圈包的象牙白小牛皮，在弧形皮面上积累了灰色擦痕、细小黑点与污渍，缝线与链孔周围也沉积了明显的尘垢。Ianne Atelier 先逐面清洁，再以精准调配的象牙白色层层补色，并细致避开刺绣字母与五金。我们并非要抹去所有使用痕迹，而是淡化瑕疵，让浅色皮面重新呈现洁净、均匀的质感。这只包以轻盈、明亮的姿态，准备好下一次出行。"
+    }
   },
 
   "0025": {
@@ -374,7 +375,6 @@ const CASES = {
       zh: "频繁的穿着与日常环境的侵蚀，导致这双运动鞋的皮革表面及鞋底出现了明显的泛黄与污渍沉淀。Ianne Atelier 采用精细校准的清洁技法，深层剥离纤维间的尘垢，从而有效缓解了材质的暗沉与色泽不均。此项服务并非要完全抹去使用的印记或试图还原出厂状态，而是致力于唤醒材质的洁净感，让岁月累积的痕迹自然收敛。经过专业的养护，这双鞋履将以更加清爽的姿态，陪您走过更长的旅途。"
     }
   },
-  //start here
   "0026": {
     brand: "New Balance",
     service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
@@ -456,7 +456,7 @@ const CASES = {
   },
     "0031": {
     brand: "LV",
-    { en: "Repair & Restore", zh: "修补修复" },
+    service: { en: "Repair & Restore", zh: "修补修复" },
     images: [
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0031_01.webp",
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0031_02.webp",

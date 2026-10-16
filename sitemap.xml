@@ -204,30 +204,5 @@
     <priority>0.6</priority>
     <changefreq>yearly</changefreq>
   </url>
-  <url>
-    <loc>https://ianneatelier.com/case.html?id=0033</loc>
-    <lastmod>2026-10-16</lastmod>
-    <priority>0.6</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://ianneatelier.com/case.html?id=0034</loc>
-    <lastmod>2026-10-16</lastmod>
-    <priority>0.6</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://ianneatelier.com/case.html?id=0035</loc>
-    <lastmod>2026-10-16</lastmod>
-    <priority>0.6</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://ianneatelier.com/case.html?id=0036</loc>
-    <lastmod>2026-10-16</lastmod>
-    <priority>0.6</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-
 
 </urlset>

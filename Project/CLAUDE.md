@@ -21,9 +21,9 @@ Relative paths only, no hard-coded hostnames. Live: https://ianneatelier.com/
 | File | Role |
 |---|---|
 | `index.html` | Homepage — hero, services, process, testimonials |
-cases.html | Service picker — one card per service with case count → links to cases-grid.html?service=X | ``
+| `cases.html` | Service picker — one card per service with case count → links to `cases-grid.html?service=X` |
 | `case.html` | Single case via `?id=` |
-cases-grid.html | Case grid for one service (?service=), built from cases.js → links to case.html?id= | ``
+| `cases-grid.html` | Case grid for one service (`?service=`), built from `cases.js` → links to `case.html?id=` |
 | `assets/css/style.css` | ALL styles |
 | `assets/js/cases.js` | ALL case data (`CASES` registry) |
 | `assets/js/animation.js` | Reveal helper — do not bloat |
