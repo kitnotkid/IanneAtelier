@@ -289,7 +289,7 @@ const CASES = {
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0020_03.webp",
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0020_04.webp"
     ],
-    title: { en: "Colour Touch-up", zh: "局部补色" },
+    title: { en: "Leather Handbag Colour Touch-up", zh: "皮革手袋局部补色" },
     desc: {
       en: "Prolonged use gradually strips black leather of its density — surface fibres lighten into a grey haze, while fine scratches and dust build-up dull the once-uniform finish. Ianne Atelier addresses this through methodical colour saturation, deep-cleansing the embedded residue before re-layering pigment to reduce the visual gap left by wear. The intent is not to recreate a factory finish, but to bring the faded areas back into tonal agreement with the rest of the bag — a composed, evenly saturated black that carries its history with quiet dignity.",
       zh: "黑色皮革在长期使用后，色彩密度会逐渐流失——表层纤维泛灰起雾，细微刮痕与积尘让原本统一的色泽变得斑驳黯淡。Ianne Atelier 先深层清理嵌入纤维的污垢，再以层叠补色收窄磨损留下的视觉落差。我们并非要还原出厂状态，而是让褪色的部位重新融入包身的整体色序，呈现沉稳、均匀的黑色质感——岁月的痕迹依然存在，只是不再喧宾夺主。"
@@ -302,7 +302,7 @@ const CASES = {
     images: [
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0021_01.webp"
     ],
-    title: { en: "Repair & Restore", zh: "修补修复" },
+    title: { en: "Leather Bag Repair & Restore", zh: "皮革包包修补修复" },
     desc: {
       en: "A worn zipper is often the first component to surrender — teeth misalign, the slider loses grip, and the daily ritual of opening and closing turns into friction. Ianne Atelier replaces the failing track entirely, fitting a new zipper matched in gauge and hardware tone, then re-stitching along the original seam lines to preserve the bag's structure. The intent is simple: return the closure to the smooth, reliable glide it was built to deliver, so the bag can quietly resume its duty without hesitation at every open and close.",
       zh: "拉链往往是包包最先失守的部件——链齿错位、拉头松脱，每一次开合都变得迟滞卡顿。Ianne Atelier 将整条失效的拉链拆除更换，选用规格与五金色调相匹配的新链，并沿原有车线重新缝合，保留包身原本的结构。我们的目标很直接：让开合恢复应有的顺滑与可靠，使包包重新胜任日常的每一次取放，不再有迟疑。"
@@ -314,9 +314,9 @@ const CASES = {
     service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
     images: [
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0022_01.webp",
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0022_02.webp"
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0022_02.png"
     ],
-    title: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    title: { en: "Roger Vivier Viv' Run Sneaker Cleaning", zh: "Roger Vivier Viv' Run 运动鞋清洗" },
     desc: {
       en: "Environmental exposure and regular use have led to noticeable yellowing and particulate accumulation within the intricate mesh fabric of these shoes. At Ianne Atelier, we utilized a gentle, precision-calibrated cleaning extraction to lift embedded dirt without compromising the delicate structural integrity or embellishments. While this process is not about erasing the past or achieving a factory-new state, it effectively revitalizes the fabric's brightness and subdues overall discoloration. The footwear now carries its history with quiet dignity, prepared for the journeys ahead.",
       zh: "日常的穿着与环境接触，使鞋面精细的网眼织物中积聚了明显的灰尘与泛黄痕迹。Ianne Atelier 采用温和的深层提取技术，在不损伤脆弱网面与水钻饰件的前提下，安全地剥离纤维深处的污垢。这次深层清洁并非要还原出厂状态，而是致力于最大程度地唤醒材质的明亮度，让岁月累积的暗沉自然收敛。褪去疲惫的痕迹后，这双鞋履将以更加优雅从容的姿态，陪您走过更长的旅途。"
@@ -327,14 +327,14 @@ const CASES = {
     brand: "Chanel",
     service: { en: "Colour Touch-up", zh: "局部补色" },
     images: [
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_01.webp",
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_02.webp",
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_03.webp",
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_04.webp",
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_05.webp",
-      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_06.webp"
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_01.png",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_02.png",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_03.png",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_04.png",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_05.png",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0023_06.png"
     ],
-    title: { en: "Colour Touch-up", zh: "局部补色" },
+    title: { en: "Chanel Colour Touch-up", zh: "Chanel 局部补色" },
     desc: {
       en: "Continuous friction and daily handling have caused localized pigment erosion, scuffing, and visible discoloration along the delicate piping and quilted surfaces of this Chanel piece. At Ianne Atelier, we addressed these visual irregularities through a precision-calibrated colour touch-up, meticulously blending the pigment to match the surrounding leather. While this delicate surface treatment is not about erasing the past or achieving a factory-new state, it effectively subdues the prominence of wear and reinstates overall tonal consistency. The handbag now carries its history with quiet dignity, elegantly prepared for its continued journey.",
       zh: "频繁的日常使用与边缘摩擦，使得这只 Chanel 手袋的绲边及绗缝表面出现了局部色素剥落与明显的泛黄暗沉。Ianne Atelier 采用层叠补色技法，以精准调配的色彩细致修饰受损区域，使其与原有皮面自然融合。此项服务并非要生硬地还原出厂状态，而是旨在最大程度地淡化磨损痕迹，收敛视觉上的色差与突兀感。经过温和的修护，这只包袋带着岁月留下的温柔底蕴，继续陪您优雅前行。"    }
@@ -351,7 +351,7 @@ const CASES = {
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_05.webp",
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0024_06.webp"
     ],
-    title: { en: "Colour Touch-up", zh: "局部补色" },
+    title: { en: "Chanel La Pausa Runway Lifesaver Ring Bag Colour Touch-up", zh: "Chanel La Pausa Runway Lifesaver Ring Bag 局部补色" },
     desc: {
       en: "Continuous friction and daily handling have caused localized pigment erosion, scuffing, and visible discoloration along the delicate piping and quilted surfaces of this Chanel piece. At Ianne Atelier, we addressed these visual irregularities through a precision-calibrated colour touch-up, meticulously blending the pigment to match the surrounding leather. While this delicate surface treatment is not about erasing the past or achieving a factory-new state, it effectively subdues the prominence of wear and reinstates overall tonal consistency. The handbag now carries its history with quiet dignity, elegantly prepared for its continued journey.",
       zh: "频繁的日常使用与边缘摩擦，使得这只 Chanel 手袋的绲边及绗缝表面出现了局部色素剥落与明显的泛黄暗沉。Ianne Atelier 采用层叠补色技法，以精准调配的色彩细致修饰受损区域，使其与原有皮面自然融合。此项服务并非要生硬地还原出厂状态，而是旨在最大程度地淡化磨损痕迹，收敛视觉上的色差与突兀感。经过温和的修护，这只包袋带着岁月留下的温柔底蕴，继续陪您优雅前行。"    }
@@ -368,10 +368,123 @@ const CASES = {
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0025_05.webp",
       "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0025_06.webp"
     ],
-    title: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    title: { en: "Nike Air Force 1 PLT.AF.ORM Sneaker Cleaning", zh: "Nike Air Force 1 PLT.AF.ORM 运动鞋清洗" },
     desc: {
       en: "Daily wear and environmental exposure have caused significant yellowing and particulate accumulation across the leather surfaces and soles of these sneakers. At Ianne Atelier, we employed a precision-calibrated cleaning process to carefully lift embedded stains and address the widespread discoloration. While this service is not about erasing the past or achieving a factory-new state, it effectively revitalizes the material's brightness and restores a cleaner, more uniform appearance. The sneakers now carry their history with quiet dignity, ready for the adventures that lie ahead.",
       zh: "频繁的穿着与日常环境的侵蚀，导致这双运动鞋的皮革表面及鞋底出现了明显的泛黄与污渍沉淀。Ianne Atelier 采用精细校准的清洁技法，深层剥离纤维间的尘垢，从而有效缓解了材质的暗沉与色泽不均。此项服务并非要完全抹去使用的印记或试图还原出厂状态，而是致力于唤醒材质的洁净感，让岁月累积的痕迹自然收敛。经过专业的养护，这双鞋履将以更加清爽的姿态，陪您走过更长的旅途。"
+    }
+  },
+  //start here
+  "0026": {
+    brand: "New Balance",
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0026_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0026_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0026_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0026_04.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0026_05.webp"
+    ],
+    title: { en: "New Balance 991 Suede Sneaker Cleaning", zh: "New Balance 991 麂皮运动鞋清洗" },
+        desc: {
+      en: "Daily wear has settled fine dust into the suede nap of this New Balance 991, with grey speckling and grime gathering along the midsole and outsole edge. Ianne Atelier lifted the embedded particulates with a pH-balanced suede cleanse and soft-bristle work, keeping the nap soft and full. The midsole retains its warm, age-earned cream tone — this is not about an out-of-box finish, but a cleaner, more even pair. It carries its character forward, ready for the miles ahead.",
+      zh: "日常穿着让细尘沉入这双 New Balance 991 的麂皮绒面，中底与鞋底边缘也积聚了灰点与污垢。Ianne Atelier 以 pH 平衡的麂皮清洁配合软毛细刷，温和剥离纤维深处的尘垢，保留绒面的蓬松质感。中底随岁月沉淀的暖米色会自然保留——我们并非要还原出厂状态，而是让整双鞋重回洁净、均匀。经过护理，它将继续陪伴您丈量未来的每一段路途。"
+    }
+  },
+   "0027": {
+    brand: "Adidas",
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0027_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0027_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0027_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0027_04.webp"
+    ],
+    title: { en: "Adidas Superstar Sneaker Cleaning", zh: "Adidas Superstar 运动鞋清洗" },
+    desc: {
+      en: "Daily wear has drawn grey grime into the rubber cupsole of this Adidas Superstar, dulling the laces and leaving a light film across the cream leather. Ianne Atelier lifted the embedded dirt with a gentle leather cleanse and targeted sidewall scrubbing, preserving the upper's finish. Natural creasing remains — this is not about a factory-new pair, but a brighter, cleaner silhouette. The Superstar returns with its character intact, ready for the road ahead.",
+      zh: "日常穿着让这双 Adidas Superstar 的橡胶鞋边积满灰黑污垢，鞋带黯淡，米色皮面也蒙上一层细尘。Ianne Atelier 以温和的皮面清洁配合鞋边针对性刷洗，剥离嵌入纹理的污渍，同时保留皮面原有光泽。鞋面的自然折痕会如实保留——我们并非要还原出厂状态，而是让整体重回洁净明亮。这双 Superstar 以更清爽的姿态，继续伴您踏出每一步。"
+    }
+  },
+  "0028": {
+    brand: "Nike",
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0028_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0028_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0028_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0028_04.webp"
+    ],
+    title: { en: "Air Jordan 1 Low Sneaker Cleaning", zh: "Air Jordan 1 Low 运动鞋清洗" },
+    desc: {
+      en: "Daily wear has clouded the white midsole of this Air Jordan 1 Low with grime and dark speckling, settling deep into its textured sidewall. Ianne Atelier lifted the embedded dirt through targeted sidewall scrubbing and a gentle cleanse across the leather panels, leaving the upper's finish undisturbed. This is not about a factory-new pair, but a crisper contrast where each colour block reads cleanly again. The pair returns sharp and composed, ready for its next run.",
+      zh: "日常穿着让这双 Air Jordan 1 Low 的白色中底蒙上一层灰垢与黑点，尘埃更沉积在鞋边的纹理之间。Ianne Atelier 以鞋边针对性刷洗配合温和的皮面清洁，剥离深层污渍，同时保留鞋面原有的质感。我们并非要还原出厂状态，而是让灰、黑、红三色的层次重新分明。这双鞋以利落、清爽的姿态，准备迎接下一段旅程。"
+    }
+  },
+    "0029": {
+    brand: "Puma",
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0029_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0029_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0029_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0029_04.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0029_05.webp"
+    ],
+    title: { en: "Puma Cali Dream Sneaker Cleaning", zh: "Puma Cali Dream 运动鞋清洗" },
+    desc: {
+      en: "Daily wear has dulled the white leather of this Puma Cali Dream to a grey cast, with grime settling heavily along the stepped platform sole and toe area. Ianne Atelier worked the tiered sidewall with detailed brushing and a gentle leather cleanse across the upper, lifting embedded dirt while preserving the grain. This is not about a factory-new pair — the sole keeps a soft off-white tone — but a clear contrast against the black Formstrip once more. The pair steps out clean and composed again.",
+      zh: "日常穿着让这双 Puma Cali Dream 的白色皮面泛起灰调，阶梯式厚底与鞋头处更积聚了明显的污垢。Ianne Atelier 以细致刷洗处理层叠的鞋边纹路，并以温和的皮面清洁剥离深层尘垢，同时保留皮革原有的纹理。我们并非要还原出厂状态——鞋底会保留柔和的米白色调——而是让白色鞋身与黑色 Formstrip 的对比重新清晰。这双鞋以洁净、从容的姿态，再次出发。"
+    }
+  },
+    "0030": {
+    brand: "Skechers",
+    service: { en: "Shoe Cleaning", zh: "鞋子清洗" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0030_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0030_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0030_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0030_04.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0030_05.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0030_06.webp"
+    ],
+    title: { en: "Skechers Chunky Sneaker Cleaning", zh: "Skechers 老爹鞋清洗" },
+    desc: {
+      en: "Daily wear has left a grey film across the sculpted white midsole of this Skechers chunky sneaker, with dust settling into its deep contours and mesh panels. Ianne Atelier worked through each curve of the sole with detailed brushing and lifted embedded dirt from the mesh using a gentle cleanse, preserving the vivid red, blue and yellow accents. This is not about a factory-new pair, but a cleaner base that lets every colour stand out again. The pair returns bright and ready for the next adventure.",
+      zh: "日常穿着让这双 Skechers 老爹鞋的白色立体中底蒙上一层灰膜，尘垢更沉积在弧形纹路与网面之间。Ianne Atelier 以细致刷洗逐一处理鞋底的每道曲线，并以温和清洁剥离网布深处的污渍，保留红、蓝、黄配色的鲜明层次。我们并非要还原出厂状态，而是让洁净的白色底座重新衬托出每一抹色彩。这双鞋以明亮、轻快的姿态，再次陪您出行。"
+    }
+  },
+    "0031": {
+    brand: "LV",
+    { en: "Repair & Restore", zh: "修补修复" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0031_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0031_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0031_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0031_04.webp"
+    ],
+    title: { en: "LV Neverfull Full Vachetta Replacement", zh: "LV Neverfull 全套植鞣革更换" },
+    desc: {
+      en: "Years of handling had darkened this LV Neverfull's vachetta to a deep, uneven patina, with cracks along the top trim, worn handles and missing side laces. Ianne Atelier replaced the full set of natural vachetta — trim, handles, tabs and side laces — stitched to follow the original construction. This is not about making the bag new: the Monogram canvas keeps its history, and the fresh leather will warm to honey with sunlight and use. The Neverfull returns sound and complete, ready to begin its patina anew.",
+      zh: "多年的使用让这只 LV Neverfull 的植鞣革变成深沉不均的焦糖色，包口滚边出现裂痕，提手磨损，侧边抽绳也已缺失。Ianne Atelier 为其更换整套天然植鞣革——包口滚边、提手、皮扣与侧边抽绳，并依循原有结构细致缝制。我们并非要还原出厂状态：老花帆布保留着岁月的印记，而新换的植鞣革也将在阳光与日常使用中，慢慢氧化成温润的蜜糖色。这只 Neverfull 重新变得完整、稳固，开始书写属于它的新一段岁月。"
+    }
+  },
+    "0032": {
+    brand: "LV",
+    service: { en: "Colour Touch-up", zh: "局部补色" },
+    images: [
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0032_01.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0032_02.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0032_03.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0032_04.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0032_05.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0032_06.webp",
+      "https://pub-cb39ce8f1e9548d2a5935c9f21e20a35.r2.dev/cases/0032_07.webp"
+    ],
+        title: { en: "LV Monogram Handbag Colour Touch-up", zh: "LV 老花手袋局部补色" },
+    desc: {
+      en: "Water exposure and handling had left the vachetta trim of this LV Monogram handbag marked with dark tide-lines across its studded base and uneven, streaked tones along the top band. Ianne Atelier evened the leather through layered colour touch-up, blending pigment into the natural honey patina so each panel reads as one. This is not about erasing the bag's past — the leather keeps its aged warmth, with water marks softened rather than removed. The bag returns composed and harmonious, its history worn with grace.",
+      zh: "水渍与长期使用，让这只 LV 老花手袋的植鞣革底部留下深色水痕，包口皮边也出现深浅不一的斑驳色差。Ianne Atelier 以层叠补色技法，将色料细致融入天然的蜜糖色氧化层，使各处皮面重新归于一致。我们并非要抹去岁月的痕迹——皮革依然保有温润的老化色泽，水痕是被淡化而非消除。这只手袋以沉稳、和谐的姿态，继续承载属于它的故事。"
     }
   }
 };

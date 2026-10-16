@@ -10,11 +10,13 @@
 ### A2. Rename — convention is FIXED
     <caseID>_<NN>.webp        e.g. 0021_01.webp, 0021_02.webp
 - caseID = next 4-digit ID, must match the `cases.js` key exactly.
-- NN starts at 01. (Historical exception: 0004 starts at _00 — do NOT copy it.)
+- NN starts at 01 for all new cases (0020 onward).
+  (Historical: 0004–0019 start at _00 — leave them, do NOT copy it.)
+- First image in the `images` array = cover (images[0]). For new cases that is _01.
 - _01 = cover image (becomes images[0]).
 - Lowercase, no spaces, no parentheses like "(1)" from phone exports.
 
-### A3. Upload to R2
+### A3. Upload to R2 - DONE
 - Cloudflare dashboard → R2 → bucket TODO(bucket name) → folder `cases/`
 - Drag renamed files in. Do not overwrite existing files — IDs are immutable.
 - Verify each URL loads in a browser BEFORE the next step:

@@ -21,9 +21,9 @@ Relative paths only, no hard-coded hostnames. Live: https://ianneatelier.com/
 | File | Role |
 |---|---|
 | `index.html` | Homepage — hero, services, process, testimonials |
-| `cases.html` | Filterable case grid, built from `cases.js` |
+cases.html | Service picker — one card per service with case count → links to cases-grid.html?service=X | ``
 | `case.html` | Single case via `?id=` |
-| `cases-grid.html` | Service-category landing → links into `cases.html` |
+cases-grid.html | Case grid for one service (?service=), built from cases.js → links to case.html?id= | ``
 | `assets/css/style.css` | ALL styles |
 | `assets/js/cases.js` | ALL case data (`CASES` registry) |
 | `assets/js/animation.js` | Reveal helper — do not bloat |
@@ -86,6 +86,9 @@ per `?id=`, static fallbacks). Sitemap rebuilt: all pages + 19 case URLs, submit
 GSC shows "Couldn't fetch" = normal placeholder. Recheck by 2026-06-14, expect "Success / 22".
 Known limit: social scrapers don't run JS → case links share static defaults.
 Per-case previews need pre-rendered HTML or Worker → Phase 3, deferred.
+Status 2026-10-16: Tasks 1–4 done on `case.html` (JS canonical, dynamic title/desc/OG/Twitter
+per `?id=`, static fallbacks). Domain moved to ianneatelier.com. Sitemap must list every
+cases.js ID — check after each new case.
 
 ### SOP — new case → sitemap (same commit, no exceptions)
 1. Copy template. Change ID + date. `<loc>` ID must EXACTLY match `cases.js` key
@@ -94,7 +97,7 @@ Per-case previews need pre-rendered HTML or Worker → Phase 3, deferred.
 3. Commit `cases.js` + `sitemap.xml` together. GSC = nothing to do.
 
       <url>
-        <loc>https://ianneatelier.pages.dev/case.html?id=00XX</loc>
+        <loc>https://ianneatelier.com/case.html?id=00XX</loc>
         <lastmod>YYYY-MM-DD</lastmod>
         <priority>0.6</priority>
         <changefreq>yearly</changefreq>
